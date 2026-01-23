@@ -224,7 +224,7 @@ for (i in 1:length(exps)) {
     ## Atmospheric Model ------------------------------------------------
 
     label <- paste(ind_rcm, "AtmosphericModel", sep = "_")
-    comp.nodename <- paste(label, randomName(), sep = ".")
+    comp.nodename <- paste("Component", label, sep = ".")
     
     # Data properties:     
     attr.list <- list("ds:toaLevels" = as.character(metadata$Atmos_nlevelsToA),
@@ -251,7 +251,7 @@ for (i in 1:length(exps)) {
 
     ## Aerosol Model ------------------------------------------------
     label <- paste(ind_rcm, "AerosolModel", sep = "_")
-    comp.nodename <- paste(label, randomName(), sep = ".")  
+    comp.nodename <- paste("Component", label, sep = ".")  
 
     # Data properties:  
     attr.list <- list("ds:aerosolParameterizationDescription" = as.character(metadata$Aerosols_mode),
@@ -273,7 +273,7 @@ for (i in 1:length(exps)) {
            
     ## Land Surface Model ------------------------------------------------
     label <- paste(ind_rcm, "LandSurfaceModel", sep = "_")
-    comp.nodename <- paste(label, randomName(), sep = ".")
+    comp.nodename <- paste("Component", label, sep = ".")
 
     # Data properties:  
     attr.list <- list("ds:lsmLevels" = as.character(metadata$Land_nLevels),
@@ -296,7 +296,7 @@ for (i in 1:length(exps)) {
     ## Ocean Model ------------------------------------------------
     
     label <- paste(ind_rcm, "OceanModel", sep = "_")
-    comp.nodename <- paste(label, randomName(), sep = ".")  
+    comp.nodename <- paste("Component", label, sep = ".")  
     
     # Data properties:   
     attr.list <- list("ds:oceanRepresentationMode" = as.character(metadata$Ocean_mode),
@@ -317,7 +317,7 @@ for (i in 1:length(exps)) {
     ## Lake Model ------------------------------------------------
     
     label <- paste(ind_rcm, "LakeModel", sep = "_")
-    comp.nodename <- paste(label, randomName(), sep = ".")
+    comp.nodename <- paste("Component", label, sep = ".")
     # Data properties:  
     attr.list <- list("ds:lakeRepresentation" = as.character(metadata$Lake_model)) %>% filter_attr_list()
     # No lake model node is represented if metadata is missing
@@ -337,7 +337,7 @@ for (i in 1:length(exps)) {
     ## Urban model ------------------------------------------------
 
     label <- paste(ind_rcm, "UrbanModel", sep = "_")
-    comp.nodename <- paste(label, randomName(), sep = ".")
+    comp.nodename <- paste("Component", label, sep = ".")
     # Data properties:  
     attr.list <- list("ds:urbanLsmRepresentation" = as.character(metadata$Lake_model)) %>% filter_attr_list()
     # No lake model node is represented if metadata is missing
