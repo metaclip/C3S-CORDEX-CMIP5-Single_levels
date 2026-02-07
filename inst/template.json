@@ -4,6 +4,6 @@
 		"prov": "http://www.w3.org/ns/prov#",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 		"dc": "http://purl.org/dc/elements/1.1/",
-		"ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/main/ipcc_terms.owl#",
+		"ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/devel/ipcc_terms.owl#",
 		"cx5m": "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-models.owx#"
 	},
