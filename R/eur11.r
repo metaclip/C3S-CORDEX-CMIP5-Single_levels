@@ -314,6 +314,7 @@ for (i in 1:length(exps)) {
                        c(getNodeIndexbyName(graph, rcm.nodename),
                          getNodeIndexbyName(graph, comp.nodename)),
                               label = "ds:hasOceanModelComponent")
+                              
     ## Lake Model ------------------------------------------------
     
     label <- paste(ind_rcm, "LakeModel", sep = "_")
@@ -339,7 +340,7 @@ for (i in 1:length(exps)) {
     label <- paste(ind_rcm, "UrbanModel", sep = "_")
     comp.nodename <- paste("Component", label, sep = ".")
     # Data properties:  
-    attr.list <- list("ds:urbanLsmRepresentation" = as.character(metadata$Lake_model)) %>% filter_attr_list()
+    attr.list <- list("ds:urbanLsmRepresentation" = as.character(metadata$Urban_model)) %>% filter_attr_list()
     # No lake model node is represented if metadata is missing
     if (length(attr.list) > 0) {
       graph <- my_add_vertices(graph,
