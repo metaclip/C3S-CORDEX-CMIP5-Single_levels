@@ -1,6 +1,6 @@
 {
 	"@context": {
-		"ds": "https://metaclip.org/datasource/datasource.owl#",
+		"ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/devel/datasource/datasource.owl#",
 		"prov": "http://www.w3.org/ns/prov#",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 		"dc": "http://purl.org/dc/elements/1.1/",
