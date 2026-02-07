@@ -82,7 +82,7 @@ for (i in 1:length(exps)) {
 
     ## Dataset 
     dlabel <- paste("EUR-11", gcm, exp, mem, rcm, sep = "_")
-    ds <- paste0(dlabel, randomName(), sep = ".")
+    ds <- paste0(dlabel, "_", randomName())
     message("[",format(Sys.time(), "%H:%M:%S"),"] Processing Dataset ", ds)
     
     # Dataset Individuals from CORDEX-CMIP5 vocabulary are currently ignored
