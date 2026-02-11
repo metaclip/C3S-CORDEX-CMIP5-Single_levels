@@ -4,7 +4,9 @@ This repository implements and stores a **complete provenance description** for 
 
 > **Scope**  
 > Single‑level CORDEX RCM datasets as catalogued in the Copernicus Climate Data Store (CDS). (General background on the CDS entry for CORDEX single levels is available here) [[2]](https://cds.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview)
-
+>
+> 
+> **Note.** This repository intentionally **does not** bundle the ontologies; they are maintained separately under the METACLIP organization. [[3]](https://github.com/metaclip/ontologies/tree/devel)
 ---
 
 ## Repository structure
