@@ -360,14 +360,14 @@ for (i in 1:length(exps)) {
     ## /////////////////////////////////////////////////////////////////
       
     dsubname <- paste0("DatasetSubset.", ds)
-    descr <- paste("This step entails extracting a logical subset of the",
-                   dlabel, "Dataset")
-    attr.list <- list("dc:description" = descr)
+    # descr <- paste("This step entails extracting a logical subset of the",
+    #                dlabel, "Dataset")
+    # attr.list <- list("dc:description" = descr)
     graph <- my_add_vertices(graph,
                              name = dsubname,
                              label = "DatasetSubset",
-                             className = "ds:DatasetSubset",
-                             attr = attr.list)
+                             className = "ds:DatasetSubset")
+    #                         attr = attr.list)
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, ds),
                          getNodeIndexbyName(graph, dsubname)),
