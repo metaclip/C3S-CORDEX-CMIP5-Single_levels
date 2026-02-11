@@ -9,40 +9,40 @@
   },
   "@graph": [
     {
-      "@id": "#EUR-11_CanESM2_rcp85_r1i1p1_CCLM4-8-17_pvbciy",
+      "@id": "#EUR-11_CanESM2_rcp85_r1i1p1_CCLM4-8-17_bpnsxw",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CanESM2_rcp85_r1i1p1_CCLM4-8-17",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CanESM2_rcp85_r1i1p1_CCLM4-8-17_pvbciy",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CanESM2_rcp85_r1i1p1_CCLM4-8-17_bpnsxw",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CanESM2_rcp85_r1i1p1_CCLM4-8-17 Dataset",
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble construction"
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.crszoq",
+          "@id": "#TemporalPeriod.ykhxrf",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CLMcom",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "CLMcom"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-CCLM4-8-17-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "CCLM4-8-17",
         "ds:simulationNotes": "Simulations carried out by BTU and DWD  with identical model version and configuration (except vertical layers and ToA) as for AFR-44 simulation above",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:MPI-ESM-LR",
             "@type": "ds:GCM",
@@ -150,7 +150,7 @@
           "@id": "ipcc:CLMcom"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85",
         "@type": "ds:Experiment",
         "rdfs:label": "rcp85"
@@ -160,50 +160,50 @@
         "@type": "ds:EURO",
         "rdfs:label": "Europe"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S",
         "@type": "ds:DataProvider",
         "rdfs:label": "C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX",
         "@type": "ds:Project",
         "rdfs:label": "EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CanESM2_rcp85_r1i1p1_REMO2015_uhbgzx",
+      "@id": "#EUR-11_CanESM2_rcp85_r1i1p1_REMO2015_agtncd",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CanESM2_rcp85_r1i1p1_REMO2015",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CanESM2_rcp85_r1i1p1_REMO2015_uhbgzx",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CanESM2_rcp85_r1i1p1_REMO2015_agtncd",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CanESM2_rcp85_r1i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qmzjsi",
+          "@id": "#TemporalPeriod.hmcqvj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "REMO2015",
         "ds:simulationNotes": "The model releases REMO2009 and REMO2015 differ in internal technical aspects related to refactoring and improving the model code. The physical parameterizations and the implementation of the dynamics are the same. REMO2015 v2 refers to a rerun of the corresponding REMO2015 v1 simulation, which was necessary due to inconsistent model level and surface data in CNRM-CM5 GCM boundary conditions.",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M",
             "@type": "ds:GCM",
@@ -276,41 +276,41 @@
           "@id": "ipcc:GERICS"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_COSMO-crCLIM-v1-1_zicnwg",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_COSMO-crCLIM-v1-1_hrzclf",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_COSMO-crCLIM-v1-1_zicnwg",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_COSMO-crCLIM-v1-1_hrzclf",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bqpjye",
+          "@id": "#TemporalPeriod.iykbjc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH",
           "@type": "ds:ModellingCenter",
@@ -320,13 +320,13 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "COSMO-crCLIM-v1-1",
         "ds:simulationNotes": "COSMO-crCLIM is similar to CCLM. Its main characteristics are that it runs on GPUs and includes the soil hydrology scheme of Schlemmer et al (2018). Other adjustments include changing the upper level damping to only relax the vertical velocity instead of all dynamical fields (Klemp et al., 2008)",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -381,41 +381,41 @@
           }
         ]
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_ALADIN63_tljmcq",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_ALADIN63_rdmfxj",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_ALADIN63",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_ALADIN63_tljmcq",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_ALADIN63_rdmfxj",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_ALADIN63 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.imdewu",
+          "@id": "#TemporalPeriod.wgazbj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CNRM-ALADIN63-EUR-11-v2",
         "@type": "ds:RCM",
         "rdfs:label": "ALADIN63",
@@ -472,59 +472,59 @@
         "ds:wasDevelopedBy": {
           "@id": "ipcc:CNRM"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:CNRM-CM5"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CNRM"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_HIRHAM5_bvctqs",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_HIRHAM5_vuncew",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_HIRHAM5",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_HIRHAM5_bvctqs",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_HIRHAM5_vuncew",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.quhrdm",
+          "@id": "#TemporalPeriod.bwgfit",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "DMI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v2",
         "@type": "ds:RCM",
         "rdfs:label": "HIRHAM5",
         "ds:simulationNotes": "The different versions v1, v2, v3, are simulation versions due to necessary re-runs, not different model versions.",
         "ds:versionTag": "v2",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:HadGEM2-ES"
           },
@@ -570,41 +570,41 @@
           "@id": "ipcc:DMI"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_REMO2015_ufdntx",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_REMO2015_mlhjyp",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_REMO2015",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_REMO2015_ufdntx",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_REMO2015_mlhjyp",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.aogztl",
+          "@id": "#TemporalPeriod.yolnkw",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v2",
         "@type": "ds:RCM",
         "rdfs:label": "REMO2015",
@@ -642,62 +642,62 @@
           "ds:atmosConvectionScheme": "Mass flux (Tiedtke, 1989) with modifications after Nordeng (1994) and Pfeifer (2006)",
           "ds:toaLevels": "27 (0 hPa)"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:CNRM-CM5"
         },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_RegCM4-6_tmdlke",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_RegCM4-6_fsnloi",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_RegCM4-6",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_RegCM4-6_tmdlke",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_RegCM4-6_fsnloi",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_RegCM4-6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bovkpl",
+          "@id": "#TemporalPeriod.religh",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:ICTP",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "ICTP"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "RegCM4-6",
         "ds:simulationNotes": "Model version: v1 is a rerun following a minor bug in boundary conditions",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -758,44 +758,44 @@
           "@id": "ipcc:ICTP"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_WRF381P_zmxcov",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_WRF381P_uoxwlc",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_WRF381P",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_WRF381P_zmxcov",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_WRF381P_uoxwlc",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_WRF381P Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fmkodg",
+          "@id": "#TemporalPeriod.airjnc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:IPSL"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:IPSL-WRF381P-EUR-11-v2",
         "@type": "ds:RCM",
         "rdfs:label": "WRF381P",
@@ -835,56 +835,56 @@
         "ds:wasDevelopedBy": {
           "@id": "ipcc:IPSL"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:CNRM-CM5"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_RACMO22E_ymbhta",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_RACMO22E_yksbrm",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_RACMO22E",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_RACMO22E_ymbhta",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_RACMO22E_yksbrm",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dahqgx",
+          "@id": "#TemporalPeriod.vnuemf",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "KNMI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v2",
         "@type": "ds:RCM",
         "rdfs:label": "RACMO22E",
         "ds:simulationNotes": "Model versions: Simulations with RACMO22E_v2 are straight reruns of RACMO22E_v1 employing the same model system and parameter settings. Meaning of v2 depends on forcing GCM: i) MOHC-HadGEM2-ES: remapping of GCM-SST to RACMO grid erroneous in v1, corrected in v2 ii) CNRM-CERFACS-CNRM-CM5:Atmospheric forcings derived from pressure level fields, because of error in CNRM-CM5 model level fields",
         "ds:versionTag": "v2",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:HadGEM2-ES"
           },
@@ -928,44 +928,44 @@
           "@id": "ipcc:KNMI"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_HadREM3-GA7-05_cqfxnz",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_HadREM3-GA7-05_cwenuf",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_HadREM3-GA7-05",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_HadREM3-GA7-05_cqfxnz",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_HadREM3-GA7-05_cwenuf",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_HadREM3-GA7-05 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bklyox",
+          "@id": "#TemporalPeriod.jgxsdf",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MOHC"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MOHC-HadREM3-GA7-05-EUR-11-v2",
         "@type": "ds:RCM",
         "rdfs:label": "HadREM3-GA7-05",
@@ -1002,56 +1002,56 @@
         "ds:wasDevelopedBy": {
           "@id": "ipcc:MOHC"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:CNRM-CM5"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_RCA4_slpdan",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_RCA4_qcbwly",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_RCA4",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_RCA4_slpdan",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_RCA4_qcbwly",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.nfdjty",
+          "@id": "#TemporalPeriod.juqctn",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "RCA4",
         "ds:simulationNotes": "Model versions: i) v1a is simply a re-run because a restart file to start the scenario experiment was taken from another simulations, ii) v2 and v3 are slightly tuned versions of v1 (some parameters) but parameterizations are the same. SN indicates spectral nudging. ",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -1113,41 +1113,41 @@
           "@id": "ipcc:SMHI"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_COSMO-crCLIM-v1-1_kyhpfu",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_COSMO-crCLIM-v1-1_pyxcqu",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_COSMO-crCLIM-v1-1_kyhpfu",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_COSMO-crCLIM-v1-1_pyxcqu",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dzqjcs",
+          "@id": "#TemporalPeriod.hkblxa",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -1155,90 +1155,90 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_CCLM4-8-17_qiyksp",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_CCLM4-8-17_mawdgu",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_CCLM4-8-17",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_CCLM4-8-17_qiyksp",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_CCLM4-8-17_mawdgu",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_CCLM4-8-17 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fwvamo",
+          "@id": "#TemporalPeriod.aolbpm",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CLMcom"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-CCLM4-8-17-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_HIRHAM5_xvdnzu",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_HIRHAM5_ebuwnr",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_HIRHAM5",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_HIRHAM5_xvdnzu",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_HIRHAM5_ebuwnr",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.yzmncb",
+          "@id": "#TemporalPeriod.ysepxm",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "HIRHAM5",
         "ds:simulationNotes": "The different versions v1, v2, v3, are simulation versions due to necessary re-runs, not different model versions.",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:MPI-ESM-LR"
           },
@@ -1284,129 +1284,129 @@
           "@id": "ipcc:DMI"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_REMO2015_zjxivp",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_REMO2015_eyxmpt",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_REMO2015",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_REMO2015_zjxivp",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_REMO2015_eyxmpt",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zyoqvn",
+          "@id": "#TemporalPeriod.nkpwty",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_RegCM4-6_adhvfe",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_RegCM4-6_bceufi",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_RegCM4-6",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_RegCM4-6_adhvfe",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_RegCM4-6_bceufi",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_RegCM4-6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bsuryt",
+          "@id": "#TemporalPeriod.ltpivf",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:ICTP"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_WRF381P_exzibm",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_WRF381P_upyzdm",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_WRF381P",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_WRF381P_exzibm",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_WRF381P_upyzdm",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_WRF381P Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.gmerwv",
+          "@id": "#TemporalPeriod.gptrzo",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:IPSL-WRF381P-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "WRF381P",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -1459,50 +1459,50 @@
           "@id": "ipcc:IPSL"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:IPSL"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_RACMO22E_exdumn",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_RACMO22E_iakyxr",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_RACMO22E",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_RACMO22E_exdumn",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_RACMO22E_iakyxr",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tgerkb",
+          "@id": "#TemporalPeriod.bhtmrd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "RACMO22E",
         "ds:simulationNotes": "Model versions: Simulations with RACMO22E_v2 are straight reruns of RACMO22E_v1 employing the same model system and parameter settings. Meaning of v2 depends on forcing GCM: i) MOHC-HadGEM2-ES: remapping of GCM-SST to RACMO grid erroneous in v1, corrected in v2 ii) CNRM-CERFACS-CNRM-M5:Atmospheric forcings derived from pressure level fields, because of error in CNRM-CM5 model level fields",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -1552,94 +1552,94 @@
           "@id": "ipcc:KNMI"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_RCA4_tdyhpn",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_RCA4_lwvarb",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_RCA4",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_RCA4_tdyhpn",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_RCA4_lwvarb",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.gdkflt",
+          "@id": "#TemporalPeriod.vznosf",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_WRF361H_nsraxu",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_WRF361H_uqzamd",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_WRF361H",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_WRF361H_nsraxu",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_WRF361H_uqzamd",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_WRF361H Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.oybunf",
+          "@id": "#TemporalPeriod.ytxanm",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:UHOH",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "UHOH"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:UHOH-WRF361H-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "WRF361H",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:MPI-ESM-LR"
           },
@@ -1689,41 +1689,41 @@
           "@id": "ipcc:UHOH"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_COSMO-crCLIM-v1-1_wcktxr",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_COSMO-crCLIM-v1-1_dvazsh",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r1i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_COSMO-crCLIM-v1-1_wcktxr",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_COSMO-crCLIM-v1-1_dvazsh",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r1i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cbuzwg",
+          "@id": "#TemporalPeriod.ekjpiy",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -1731,164 +1731,164 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_HIRHAM5_okrwcs",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_HIRHAM5_qdfhlx",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r1i1p1_HIRHAM5",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_HIRHAM5_okrwcs",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_HIRHAM5_qdfhlx",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r1i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ghiqop",
+          "@id": "#TemporalPeriod.eqyogm",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_RACMO22E_ukwxrn",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_RACMO22E_wjshvn",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r1i1p1_RACMO22E",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_RACMO22E_ukwxrn",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_RACMO22E_wjshvn",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r1i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fzdchx",
+          "@id": "#TemporalPeriod.cwzyfa",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_RCA4_ojirna",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r1i1p1_RCA4_kwqmfe",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r1i1p1_RCA4",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_RCA4_ojirna",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r1i1p1_RCA4_kwqmfe",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r1i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.rhtilx",
+          "@id": "#TemporalPeriod.qutmay",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_COSMO-crCLIM-v1-1_pvsejz",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_COSMO-crCLIM-v1-1_mhcuax",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r3i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_COSMO-crCLIM-v1-1_pvsejz",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_COSMO-crCLIM-v1-1_mhcuax",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r3i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.obazwe",
+          "@id": "#TemporalPeriod.vnaxrg",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -1896,450 +1896,450 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_HIRHAM5_uwpnmf",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_HIRHAM5_oehfgt",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r3i1p1_HIRHAM5",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_HIRHAM5_uwpnmf",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_HIRHAM5_oehfgt",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r3i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tjdnvk",
+          "@id": "#TemporalPeriod.prlxbd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v2"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_RCA4_dcknez",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_RCA4_sqankh",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r3i1p1_RCA4",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_RCA4_dcknez",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_RCA4_sqankh",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r3i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cduoyh",
+          "@id": "#TemporalPeriod.xntsfz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_HIRHAM5_ypgaqw",
+      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_HIRHAM5_dzhnlf",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_HIRHAM5",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_HIRHAM5_ypgaqw",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_HIRHAM5_dzhnlf",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.vjrdie",
+          "@id": "#TemporalPeriod.jexbdr",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_REMO2015_gcduts",
+      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_REMO2015_mvsnyj",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_REMO2015",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_REMO2015_gcduts",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_REMO2015_mvsnyj",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.jdsvpk",
+          "@id": "#TemporalPeriod.lidvko",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_WRF381P_pnxazk",
+      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_WRF381P_wohvgz",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_WRF381P",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_WRF381P_pnxazk",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_WRF381P_wohvgz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_WRF381P Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hsbonu",
+          "@id": "#TemporalPeriod.sqxubd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:IPSL-WRF381P-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:IPSL"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RACMO22E_ioxdnt",
+      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RACMO22E_auvbqm",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RACMO22E",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RACMO22E_ioxdnt",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RACMO22E_auvbqm",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.rcvzju",
+          "@id": "#TemporalPeriod.oldgei",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4_vwpqby",
+      "@id": "#EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4_izyogx",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4_vwpqby",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4_izyogx",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.lcrypq",
+          "@id": "#TemporalPeriod.cteilw",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MIROC5_rcp85_r1i1p1_CCLM4-8-17_cstruw",
+      "@id": "#EUR-11_MIROC5_rcp85_r1i1p1_CCLM4-8-17_iyfzmo",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MIROC5_rcp85_r1i1p1_CCLM4-8-17",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MIROC5_rcp85_r1i1p1_CCLM4-8-17_cstruw",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MIROC5_rcp85_r1i1p1_CCLM4-8-17_iyfzmo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MIROC5_rcp85_r1i1p1_CCLM4-8-17 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.xlvkac",
+          "@id": "#TemporalPeriod.qbtuwp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CLMcom"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-CCLM4-8-17-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MIROC5_rcp85_r1i1p1_REMO2015_yjwlcm",
+      "@id": "#EUR-11_MIROC5_rcp85_r1i1p1_REMO2015_zsgmiw",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MIROC5_rcp85_r1i1p1_REMO2015",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MIROC5_rcp85_r1i1p1_REMO2015_yjwlcm",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MIROC5_rcp85_r1i1p1_REMO2015_zsgmiw",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MIROC5_rcp85_r1i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.sdpgwv",
+          "@id": "#TemporalPeriod.icguaq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_CCLM4-8-17_snpyri",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_CCLM4-8-17_cihvbq",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_CCLM4-8-17",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_CCLM4-8-17_snpyri",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_CCLM4-8-17_cihvbq",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_CCLM4-8-17 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.krhpfm",
+          "@id": "#TemporalPeriod.whjzvc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CLMcom"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-CCLM4-8-17-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_ALADIN63_ocpmvt",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_ALADIN63_saihmn",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_ALADIN63",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_ALADIN63_ocpmvt",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_ALADIN63_saihmn",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_ALADIN63 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.khfcmu",
+          "@id": "#TemporalPeriod.umtdzx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CNRM-ALADIN63-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "ALADIN63",
         "ds:simulationNotes": "ALADIN63 v1 and v2 are identical. v2 indicates that the runs driven by the CNRM-CM5 GCM use the corrected version of the CNRM-CM5 Atmospheric-LBCs contrary to ALADIN53_v1",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -2402,210 +2402,210 @@
           "@id": "ipcc:CNRM"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CNRM"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_HIRHAM5_ghqicj",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_HIRHAM5_lpcrzo",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_HIRHAM5",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_HIRHAM5_ghqicj",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_HIRHAM5_lpcrzo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.nczuso",
+          "@id": "#TemporalPeriod.gvrqaw",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v2"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_REMO2015_ungilz",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_REMO2015_ukqhvx",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_REMO2015",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_REMO2015_ungilz",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_REMO2015_ukqhvx",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cadsgy",
+          "@id": "#TemporalPeriod.zsgalk",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF381P_wklozv",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF381P_zxgyuo",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF381P",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF381P_wklozv",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF381P_zxgyuo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF381P Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.agpfyh",
+          "@id": "#TemporalPeriod.otnvqj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:IPSL-WRF381P-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:IPSL"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_RACMO22E_uspgam",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_RACMO22E_qebhdv",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_RACMO22E",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_RACMO22E_uspgam",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_RACMO22E_qebhdv",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tpzmvk",
+          "@id": "#TemporalPeriod.bjhqrw",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v2"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_HadREM3-GA7-05_nmidrg",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_HadREM3-GA7-05_nwopha",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_HadREM3-GA7-05",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_HadREM3-GA7-05_nmidrg",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_HadREM3-GA7-05_nwopha",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_HadREM3-GA7-05 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tnxfaw",
+          "@id": "#TemporalPeriod.psrluf",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MOHC-HadREM3-GA7-05-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "HadREM3-GA7-05",
         "ds:simulationNotes": "v2 runs are using CNRM boundary conditions from pressure level 3D data. This is because CNRM model level 3D data (used in v1 version) do not correspond to the CNRM output available in the CMIP5 archive. No differences in the RCM, only a different source of atmospheric lateral boundary conditions.",
         "ds:versionTag": "v1",
-        "ds:hadDrivingGCM": [
+        "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NorESM1-M"
           },
@@ -2651,124 +2651,124 @@
           "@id": "ipcc:MOHC"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MOHC"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_RCA4_bosyht",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_RCA4_gvzlnw",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_RCA4",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_RCA4_bosyht",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_RCA4_gvzlnw",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.iybagh",
+          "@id": "#TemporalPeriod.subgna",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF361H_wabote",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF361H_jsdovx",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF361H",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF361H_wabote",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF361H_jsdovx",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_WRF361H Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.mxprai",
+          "@id": "#TemporalPeriod.aogqfy",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:UHOH"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:UHOH-WRF361H-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_COSMO-crCLIM-v1-1_ilogpy",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_COSMO-crCLIM-v1-1_lvkjmg",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_COSMO-crCLIM-v1-1_ilogpy",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_COSMO-crCLIM-v1-1_lvkjmg",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zquthf",
+          "@id": "#TemporalPeriod.lixqmd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -2776,289 +2776,289 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_CCLM4-8-17_xlqhto",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_CCLM4-8-17_nhzjqb",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_CCLM4-8-17",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_CCLM4-8-17_xlqhto",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_CCLM4-8-17_nhzjqb",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_CCLM4-8-17 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.orhjuq",
+          "@id": "#TemporalPeriod.hvkfgj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CLMcom"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-CCLM4-8-17-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_ALADIN63_ouyavf",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_ALADIN63_wtrcly",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_ALADIN63",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_ALADIN63_ouyavf",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_ALADIN63_wtrcly",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_ALADIN63 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ezyrxq",
+          "@id": "#TemporalPeriod.kgdxoa",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CNRM-ALADIN63-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CNRM"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HIRHAM5_nbgqhm",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HIRHAM5_felvit",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HIRHAM5",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HIRHAM5_nbgqhm",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HIRHAM5_felvit",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fuechr",
+          "@id": "#TemporalPeriod.tpfqba",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RegCM4-6_btsifj",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RegCM4-6_mdvuki",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RegCM4-6",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RegCM4-6_btsifj",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RegCM4-6_mdvuki",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RegCM4-6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pcadnm",
+          "@id": "#TemporalPeriod.lksatx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:ICTP"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RACMO22E_okgtjs",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RACMO22E_busywe",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RACMO22E",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RACMO22E_okgtjs",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RACMO22E_busywe",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hdbsap",
+          "@id": "#TemporalPeriod.ynagkw",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HadREM3-GA7-05_sqdcep",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HadREM3-GA7-05_lpefyh",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HadREM3-GA7-05",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HadREM3-GA7-05_sqdcep",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HadREM3-GA7-05_lpefyh",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_HadREM3-GA7-05 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dcurnq",
+          "@id": "#TemporalPeriod.gmkznq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MOHC-HadREM3-GA7-05-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MOHC"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_REMO2009_pzahtf",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_REMO2009_zdqewl",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_REMO2009",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_REMO2009_pzahtf",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_REMO2009_zdqewl",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_REMO2009 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cjvypz",
+          "@id": "#TemporalPeriod.cgzfmn",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MPI-CSC",
         "@type": "ds:ModellingCenter",
         "rdfs:label": "MPI-CSC"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MPI-CSC-REMO2009-EUR-11-v1",
         "@type": "ds:RCM",
         "rdfs:label": "REMO2009",
@@ -3098,45 +3098,45 @@
         "ds:wasDevelopedBy": {
           "@id": "ipcc:MPI-CSC"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:MPI-ESM-LR"
         }
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RCA4_eswitu",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RCA4_rcltxo",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RCA4",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RCA4_eswitu",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RCA4_rcltxo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pdgioq",
+          "@id": "#TemporalPeriod.ltbcsn",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1a",
         "@type": "ds:RCM",
         "rdfs:label": "RCA4",
@@ -3180,91 +3180,91 @@
           "ds:atmosConvectionScheme": "based on Bechtold-Kain-Fritsch (BKF) scheme (Bechtold et al., 2001) with revised calculation of CAPE profile according to Jiao and Jones (2008)",
           "ds:toaLevels": "40"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:MPI-ESM-LR"
         },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:SMHI"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF361H_ztfeqr",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF361H_taqwmf",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF361H",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF361H_ztfeqr",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF361H_taqwmf",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF361H Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.comfwa",
+          "@id": "#TemporalPeriod.mkbafu",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:UHOH"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:UHOH-WRF361H-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r2i1p1_COSMO-crCLIM-v1-1_xcpbwh",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r2i1p1_COSMO-crCLIM-v1-1_ignybh",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r2i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r2i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r2i1p1_COSMO-crCLIM-v1-1_xcpbwh",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r2i1p1_COSMO-crCLIM-v1-1_ignybh",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r2i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.carzlq",
+          "@id": "#TemporalPeriod.qluypj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -3272,124 +3272,124 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r2i1p1_REMO2009_obmkfu",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r2i1p1_REMO2009_xyzhrt",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r2i1p1_REMO2009",
       "ds:modelRun": "r2i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r2i1p1_REMO2009_obmkfu",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r2i1p1_REMO2009_xyzhrt",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r2i1p1_REMO2009 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fhgpme",
+          "@id": "#TemporalPeriod.lrodfh",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MPI-CSC"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MPI-CSC-REMO2009-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r2i1p1_RCA4_midroe",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r2i1p1_RCA4_zjldan",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r2i1p1_RCA4",
       "ds:modelRun": "r2i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r2i1p1_RCA4_midroe",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r2i1p1_RCA4_zjldan",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r2i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.vslbyt",
+          "@id": "#TemporalPeriod.dfngwa",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r3i1p1_COSMO-crCLIM-v1-1_snfrjv",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r3i1p1_COSMO-crCLIM-v1-1_azjqtn",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r3i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r3i1p1_COSMO-crCLIM-v1-1_snfrjv",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r3i1p1_COSMO-crCLIM-v1-1_azjqtn",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r3i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pdueql",
+          "@id": "#TemporalPeriod.kamuze",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -3397,124 +3397,124 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r3i1p1_REMO2015_tnfuvz",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r3i1p1_REMO2015_yjvqru",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r3i1p1_REMO2015",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r3i1p1_REMO2015_tnfuvz",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r3i1p1_REMO2015_yjvqru",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r3i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.extmqo",
+          "@id": "#TemporalPeriod.mvckhd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r3i1p1_RCA4_driwpx",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r3i1p1_RCA4_tzwuoc",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r3i1p1_RCA4",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r3i1p1_RCA4_driwpx",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r3i1p1_RCA4_tzwuoc",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r3i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fduahq",
+          "@id": "#TemporalPeriod.hygnvm",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_COSMO-crCLIM-v1-1_rtcpdm",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_COSMO-crCLIM-v1-1_yrngfj",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_COSMO-crCLIM-v1-1",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_COSMO-crCLIM-v1-1_rtcpdm",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_COSMO-crCLIM-v1-1_yrngfj",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_COSMO-crCLIM-v1-1 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.yqiuag",
+          "@id": "#TemporalPeriod.wvygaz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": [
+      "ds:hasModellingCenter": [
         {
           "@id": "ipcc:ETH"
         },
@@ -3522,84 +3522,84 @@
           "@id": "ipcc:CLMcom"
         }
       ],
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_ALADIN63_omquir",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_ALADIN63_ynhrov",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_ALADIN63",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_ALADIN63_omquir",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_ALADIN63_ynhrov",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_ALADIN63 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cetysu",
+          "@id": "#TemporalPeriod.qbrtld",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CNRM-ALADIN63-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CNRM"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_HIRHAM5_glkhae",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_HIRHAM5_vflmsz",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_HIRHAM5",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_HIRHAM5_glkhae",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_HIRHAM5_vflmsz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_HIRHAM5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hxqajw",
+          "@id": "#TemporalPeriod.dubcyg",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:DMI-HIRHAM5-EUR-11-v3",
         "@type": "ds:RCM",
         "rdfs:label": "HIRHAM5",
@@ -3636,466 +3636,466 @@
           "ds:atmosConvectionScheme": "Mass flux (Tiedtke, 1989) with modifications after Nordeng (1994) and Pfeifer (2006)",
           "ds:toaLevels": "31(12.5 hPa)"
         },
-        "ds:hadDrivingGCM": {
+        "ds:hasDrivingGCM": {
           "@id": "ipcc:NorESM1-M"
         },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:DMI"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:DMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_REMO2015_rogwsn",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_REMO2015_ktaruy",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_REMO2015",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_REMO2015_rogwsn",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_REMO2015_ktaruy",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_REMO2015 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hsgyvc",
+          "@id": "#TemporalPeriod.inzjme",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:GERICS"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_RegCM4-6_vxzqcy",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_RegCM4-6_wctnji",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_RegCM4-6",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_RegCM4-6_vxzqcy",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_RegCM4-6_wctnji",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_RegCM4-6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hpqwex",
+          "@id": "#TemporalPeriod.tkbzxd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:ICTP"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_WRF381P_epwjmd",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_WRF381P_kutpwh",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_WRF381P",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_WRF381P_epwjmd",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_WRF381P_kutpwh",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_WRF381P Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.izelhn",
+          "@id": "#TemporalPeriod.quimhz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:IPSL-WRF381P-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:IPSL"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_RACMO22E_gjeqds",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_RACMO22E_etjwdg",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_RACMO22E",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_RACMO22E_gjeqds",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_RACMO22E_etjwdg",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.snyciq",
+          "@id": "#TemporalPeriod.gfdluh",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_HadREM3-GA7-05_pabjcu",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_HadREM3-GA7-05_gxerqz",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_HadREM3-GA7-05",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_HadREM3-GA7-05_pabjcu",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_HadREM3-GA7-05_gxerqz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_HadREM3-GA7-05 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.gbqosh",
+          "@id": "#TemporalPeriod.ilwhzc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MOHC-HadREM3-GA7-05-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MOHC"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_RCA4_otyerb",
+      "@id": "#EUR-11_NorESM1-M_rcp85_r1i1p1_RCA4_dzvect",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_NorESM1-M_rcp85_r1i1p1_RCA4",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_RCA4_otyerb",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_NorESM1-M_rcp85_r1i1p1_RCA4_dzvect",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_NorESM1-M_rcp85_r1i1p1_RCA4 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.meaxhj",
+          "@id": "#TemporalPeriod.hbqpta",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:SMHI"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:SMHI-RCA4-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_CCLM4-8-17_mgodne",
+      "@id": "#EUR-11_CNRM-CM5_rcp85_r1i1p1_CCLM4-8-17_byugst",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_CNRM-CM5_rcp85_r1i1p1_CCLM4-8-17",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_CCLM4-8-17_mgodne",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_CNRM-CM5_rcp85_r1i1p1_CCLM4-8-17_byugst",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_CNRM-CM5_rcp85_r1i1p1_CCLM4-8-17 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zlxupr",
+          "@id": "#TemporalPeriod.dypxcz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:CLMcom"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:CLMcom-CCLM4-8-17-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_HadREM3-GA7-05_dtuwpv",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r12i1p1_HadREM3-GA7-05_ujdnqp",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r12i1p1_HadREM3-GA7-05",
       "ds:modelRun": "r12i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_HadREM3-GA7-05_dtuwpv",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r12i1p1_HadREM3-GA7-05_ujdnqp",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r12i1p1_HadREM3-GA7-05 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dmuvia",
+          "@id": "#TemporalPeriod.ycpaof",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:MOHC-HadREM3-GA7-05-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:MOHC"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_RACMO22E_bocdpy",
+      "@id": "#EUR-11_EC-EARTH_rcp85_r3i1p1_RACMO22E_xziwuo",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_EC-EARTH_rcp85_r3i1p1_RACMO22E",
       "ds:modelRun": "r3i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_RACMO22E_bocdpy",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_EC-EARTH_rcp85_r3i1p1_RACMO22E_xziwuo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_EC-EARTH_rcp85_r3i1p1_RACMO22E Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tbgjfp",
+          "@id": "#TemporalPeriod.cyzxpv",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:KNMI-RACMO22E-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:KNMI"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_RegCM4-6_ezdlsf",
+      "@id": "#EUR-11_HadGEM2-ES_rcp85_r1i1p1_RegCM4-6_erfvom",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_HadGEM2-ES_rcp85_r1i1p1_RegCM4-6",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_RegCM4-6_ezdlsf",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_HadGEM2-ES_rcp85_r1i1p1_RegCM4-6_erfvom",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_HadGEM2-ES_rcp85_r1i1p1_RegCM4-6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hbsmft",
+          "@id": "#TemporalPeriod.odugfv",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:ICTP"
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
     {
-      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF381P_praegi",
+      "@id": "#EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF381P_ewjaml",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF381P",
       "ds:modelRun": "r1i1p1",
-      "ds:hadDatasetSubset": {
-        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF381P_praegi",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF381P_ewjaml",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the EUR-11_MPI-ESM-LR_rcp85_r1i1p1_WRF381P Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qflhkx",
+          "@id": "#TemporalPeriod.pwsvyg",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[2006-2100)",
           "prov:startedAtTime": "2006-01-01T00:00:00Z",
           "prov:endedAtTime": "2100-12-31T23:59:59Z"
         },
-        "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vangdx"
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.rnfgvq"
         }
       },
-      "ds:hadSimulationModel": {
+      "ds:hasSimulationModel": {
         "@id": "#cx5m:IPSL-WRF381P-EUR-11-v1"
       },
-      "ds:hadModellingCenter": {
+      "ds:hasModellingCenter": {
         "@id": "ipcc:IPSL"
       },
-      "ds:hadExperiment": {
+      "ds:hasExperiment": {
         "@id": "ipcc:RCP85"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:EURO"
       },
-      "ds:hadDataProvider": {
+      "ds:hasDataProvider": {
         "@id": "ds:C3S"
       },
-      "ds:hadProject": {
+      "ds:hasProject": {
         "@id": "ds:EURO-CORDEX"
       }
     },
@@ -4103,8 +4103,8 @@
       "@id": "ds:Copernicus-CORDEX-CMIP5",
       "@type": "ds:Dataset",
       "rdfs:label": "CICA-CORDEX-CMIP5",
-      "prov:hadPrimarySource": {
-        "@id": "#Ensemble.vangdx"
+      "prov:wasDerivedFrom": {
+        "@id": "#Ensemble.rnfgvq"
       }
     }
   ]
