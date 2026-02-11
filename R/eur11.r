@@ -1,7 +1,7 @@
 ## ///////////////////////////////////////////////////////////////////////////////
 # IMPORTANT NOTE: 
 # This script requires an up-to-date version of the ontologies:
-# --- datasource (v>=0.31)
+# --- datasource (v>=1.0.0)
 # --- ipcc_terms (v>=0.8)
 ## ///////////////////////////////////////////////////////////////////////////////
 
@@ -101,7 +101,7 @@ for (i in 1:length(exps)) {
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, ds),
                          getNodeIndexbyName(graph, "ds:EURO-CORDEX")),
-                        label = "ds:hadProject")
+                        label = "ds:hasProject")
           
     ## Data Provider
     graph <- my_add_vertices(graph,
@@ -111,7 +111,7 @@ for (i in 1:length(exps)) {
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, ds),
                          getNodeIndexbyName(graph, "ds:C3S")),
-                       label = "ds:hadDataProvider")
+                       label = "ds:hasDataProvider")
 
     ## SpatialExtent
     graph <- my_add_vertices(graph,
@@ -132,7 +132,7 @@ for (i in 1:length(exps)) {
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, ds),
                          getNodeIndexbyName(graph, exp.nodename)),
-                        label = "ds:hadExperiment")
+                        label = "ds:hasExperiment")
 
     ## RCM info 
     insts <- exp.subset$rcm_institution[j]
@@ -158,10 +158,10 @@ for (i in 1:length(exps)) {
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, ds),
                          getNodeIndexbyName(graph, rcm.nodename)),
-                       label = "ds:hadSimulationModel")
+                       label = "ds:hasSimulationModel")
 
     ## RCM modelling center - Dataset production
-    ## NOTE: Since datasource v0.31 the new object property "ds:wasDevelopedBy"
+    ## NOTE: Since datasource v1.0.0 the new object property "ds:wasDevelopedBy"
     ## allows to differentiate de ModellingCenter producing the Dataset 
     ## from the Modelling Center responsible for GCM/RCM code development 
     ## (usually the same Organization, but different Domain -> Range relationship)
@@ -178,7 +178,7 @@ for (i in 1:length(exps)) {
       graph <- add_edges(graph,
                          c(getNodeIndexbyName(graph, ds),
                            getNodeIndexbyName(graph, inst.nodename)),
-                         label = "ds:hadModellingCenter")
+                         label = "ds:hasModellingCenter")
               
       ## RCM modelling center - Software development
       graph <- add_edges(graph,
@@ -198,7 +198,7 @@ for (i in 1:length(exps)) {
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, rcm.nodename),
                          getNodeIndexbyName(graph, gcm.nodename)),
-                       label = "ds:hadDrivingGCM")
+                       label = "ds:hasDrivingGCM")
 
     ## GCM Modelling center
     insts <- exp.subset$gcm_institution[j]
@@ -371,7 +371,7 @@ for (i in 1:length(exps)) {
     graph <- add_edges(graph,
                        c(getNodeIndexbyName(graph, ds),
                          getNodeIndexbyName(graph, dsubname)),
-                       label = paste0("ds:hadDatasetSubset"))
+                       label = paste0("ds:hasDatasetSubset"))
 
     ## TemporalExtent ----------------------------------------------
     
@@ -428,7 +428,7 @@ for (i in 1:length(exps)) {
   graph <- add_edges(graph,
                      c(getNodeIndexbyName(graph, "ds:Copernicus-CORDEX-CMIP5"),
                        getNodeIndexbyName(graph, ens$parentnodename)),
-                     label = paste0("prov:hadPrimarySource"))
+                     label = paste0("prov:wasDerivedFrom"))
 
   ## /////////////////////////////////////////////////////////////////////
   ## EXPORT JSON-LD ------------------------------------------------------
