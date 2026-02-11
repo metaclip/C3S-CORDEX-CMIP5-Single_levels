@@ -1,0 +1,2579 @@
+{
+  "@context": {
+    "ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/devel/datasource/datasource.owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/devel/ipcc_terms.owl#",
+    "cx5m": "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-models.owx#"
+  },
+  "@graph": [
+    {
+      "@id": "#CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_REMO2015_utziwc",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_REMO2015_utziwc",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.jkeqcu",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble",
+            "@type": "ds:GrandEnsemble",
+            "rdfs:label": "Grand Ensemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.dtkubs",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "GERICS"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-AFR-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M",
+            "@type": "ds:GCM",
+            "rdfs:label": "NorESM1-M",
+            "ds:wasDevelopedBy": {
+              "@id": "ipcc:NCC",
+              "@type": "ds:ModellingCenter",
+              "rdfs:label": "NCC"
+            }
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR",
+            "@type": "ds:GCM",
+            "rdfs:label": "MPI-ESM-LR",
+            "ds:wasDevelopedBy": {
+              "@id": "ipcc:MPI-M",
+              "@type": "ds:ModellingCenter",
+              "rdfs:label": "MPI-M"
+            }
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES",
+            "@type": "ds:GCM",
+            "rdfs:label": "HadGEM2-ES",
+            "ds:wasDevelopedBy": {
+              "@id": "ipcc:MOHC",
+              "@type": "ds:ModellingCenter",
+              "rdfs:label": "MOHC"
+            }
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical",
+        "@type": "ds:Experiment",
+        "rdfs:label": "historical"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AFR-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "AFR-22"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S",
+        "@type": "ds:DataProvider",
+        "rdfs:label": "C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE",
+        "@type": "ds:Project",
+        "rdfs:label": "CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_menydt",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_menydt",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.inlobt",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.jkeqcu"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "ICTP"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-AFR-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-7",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR",
+            "@type": "ds:GCM",
+            "rdfs:label": "MPI-ESM-MR",
+            "ds:wasDevelopedBy": {
+              "@id": "ipcc:MPI-M"
+            }
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AFR-22"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AFR-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_lgqpjb",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AFR-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_lgqpjb",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.wydsgv",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.jkeqcu"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-AFR-22-v1"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AFR-22"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AFR-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_gdvxij",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AFR-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_gdvxij",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.ihebxj",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.jkeqcu"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-AFR-22-v0"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AFR-22"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_REMO2015_ikqonf",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_REMO2015_ikqonf",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.quyvbx",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.jkeqcu"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-AFR-22-v1"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AFR-22"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_RegCM4-7_jxvpyt",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_RegCM4-7_jxvpyt",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.vnritz",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.jkeqcu"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-AFR-22-v0"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AFR-22"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_ychqwb",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_ychqwb",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.xyguwc",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.fizpln",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-AUS-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AUS-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "AUS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_iqmbva",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_iqmbva",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.rmcblg",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.xyguwc"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-AUS-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-7",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AUS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AUS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_acnbli",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AUS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_acnbli",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.nidxml",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.xyguwc"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-AUS-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AUS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AUS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_rytodx",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AUS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_rytodx",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.guhfam",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.xyguwc"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-AUS-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AUS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_REMO2015_qvirlo",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_REMO2015_qvirlo",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.erxbyu",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.xyguwc"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-AUS-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AUS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_nareuy",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_nareuy",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.htkfmq",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.xyguwc"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-AUS-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:AUS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_xfoquh",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_xfoquh",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.biywrj",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.blpyht",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-CAM-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:CAM-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "CAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_ljaqir",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_ljaqir",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.jvcoyg",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.biywrj"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-CAM-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-7",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:GFDL-ESM2M",
+            "@type": "ds:GCM",
+            "rdfs:label": "GFDL-ESM2M",
+            "ds:wasDevelopedBy": {
+              "@id": "ipcc:NOAA-GFDL",
+              "@type": "ds:ModellingCenter",
+              "rdfs:label": "NOAA-GFDL"
+            }
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:CAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_CAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_jbwpvk",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_CAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_jbwpvk",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.mvljtg",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.biywrj"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-CAM-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:CAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_CAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_hysofg",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_CAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_hysofg",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.dohvbm",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.biywrj"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-CAM-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:CAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_CAM-22_NorESM1-M_historical_r1i1p1_REMO2015_dckexy",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_CAM-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_NorESM1-M_historical_r1i1p1_REMO2015_dckexy",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.huptyf",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.biywrj"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-CAM-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:CAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_CAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4-7_pjrflb",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_CAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4-7_pjrflb",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.uytljv",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.biywrj"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-CAM-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:CAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_blxyea",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_blxyea",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.vbakju",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.hpcdzf",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-EAS-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EAS-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "EAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-4_lsrxvq",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-4",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-4_lsrxvq",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.zmdxcw",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.vbakju"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-4-EAS-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-4",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_prtuxs",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_prtuxs",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.qwrbjm",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.vbakju"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-EAS-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-4_qthkyf",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-4",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-4_qthkyf",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.lidxbn",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.vbakju"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-4-EAS-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_REMO2015_ekympc",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_REMO2015_ekympc",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.ydakqg",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.vbakju"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-EAS-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_RegCM4-4_aiwqvr",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_RegCM4-4",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_RegCM4-4_aiwqvr",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.uvfeik",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.vbakju"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-4-EAS-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_REMO2015_nyprhl",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_REMO2015_nyprhl",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.ncrqxh",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.bxmuwq",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EUR-11",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "EUR-11"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_RegCM4-6_eswnkx",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_RegCM4-6",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_RegCM4-6_eswnkx",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.rkbwnf",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.ncrqxh"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-6",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EUR-11"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r3i1p1_REMO2015_lscauf",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r3i1p1_REMO2015",
+      "ds:modelRun": "r3i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r3i1p1_REMO2015_lscauf",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.jskydw",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.ncrqxh"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EUR-11"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r1i1p1_RegCM4-6_qltvzs",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r1i1p1_RegCM4-6",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r1i1p1_RegCM4-6_qltvzs",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.vqrepx",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.ncrqxh"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EUR-11"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_REMO2015_xwpbsj",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_REMO2015_xwpbsj",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.vsbxuy",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.ncrqxh"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-EUR-11-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EUR-11"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_RegCM4-6_jpdhso",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_RegCM4-6",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_RegCM4-6_jpdhso",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.wyzsbk",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.ncrqxh"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-6-EUR-11-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:EUR-11"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_ekhacn",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_ekhacn",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.tqnwih",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.fobzgj",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-NAM-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:NAM-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "NAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4_ztykxh",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4_ztykxh",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.ibljky",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.tqnwih"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ISU",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "ISU"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ISU-RegCM4-NAM-22-v4-4-rc8",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4",
+        "ds:versionTag": "v4-4-rc8",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ISU"
+        },
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:GFDL-ESM2M"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ]
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:NAM-22"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_awbrnu",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_awbrnu",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.vspice",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.tqnwih"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-NAM-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:NAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_RegCM4_vefizx",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_RegCM4",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_RegCM4_vefizx",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.olhupx",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.tqnwih"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:NCAR",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "NCAR"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:NCAR-RegCM4-NAM-22-v4-4-rc8",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4",
+        "ds:versionTag": "v4-4-rc8",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:NCAR"
+        },
+        "ds:hasDrivingGCM": {
+          "@id": "ipcc:MPI-ESM-LR"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:NAM-22"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_NAM-22_NorESM1-M_historical_r1i1p1_REMO2015_dmowfq",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_NAM-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_NorESM1-M_historical_r1i1p1_REMO2015_dmowfq",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.hbarto",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.tqnwih"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-NAM-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:NAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_NAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4_rzyjte",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_NAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4_rzyjte",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.yelhkd",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.tqnwih"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ISU"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ISU-RegCM4-NAM-22-v4-4-rc8"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:NAM-22"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_aoujsf",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_aoujsf",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.zycnwv",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.ftnoca",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-SAM-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SAM-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "SAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_rogvnk",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_rogvnk",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.gjkdin",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.zycnwv"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-SAM-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-7",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_uckvjy",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_uckvjy",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.imtkro",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.zycnwv"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-SAM-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_phiyeo",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_phiyeo",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.qcnszr",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.zycnwv"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-SAM-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_REMO2015_nkufoc",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_REMO2015_nkufoc",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.pjvbcu",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.zycnwv"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-SAM-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_RegCM4-7_nruavb",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_RegCM4-7_nruavb",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.mtwfse",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.zycnwv"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-SAM-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SAM-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_REMO2015_aremik",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_REMO2015_aremik",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.pngqvd",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.olbcxq",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-SEA-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SEA-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "SEA-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_sdimvz",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_sdimvz",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.eilysg",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.pngqvd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-SEA-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-7",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ICTP"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SEA-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SEA-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_ltqpmf",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SEA-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_ltqpmf",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.qnihxr",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.pngqvd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-SEA-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SEA-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SEA-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_wgztin",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SEA-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_wgztin",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.scmpou",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.pngqvd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-SEA-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SEA-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_REMO2015_mpogtq",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_REMO2015_mpogtq",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.zwomkd",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.pngqvd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-SEA-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SEA-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_RegCM4-7_upimgt",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_RegCM4-7_upimgt",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.jpnfwo",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.pngqvd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ICTP-RegCM4-7-SEA-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:SEA-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ICTP"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_WAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_eruwyb",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_WAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_eruwyb",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.hfuyjd",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble",
+          "ds:isMemberOf": {
+            "@id": "ds:C3S-CORDEX-GrandEnsemble"
+          }
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.olfesc",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-WAS-22-v1",
+        "@type": "ds:RCM",
+        "rdfs:label": "REMO2015",
+        "ds:versionTag": "v1",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-LR"
+          },
+          {
+            "@id": "ipcc:HADGEM2-ES"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:GERICS"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:WAS-22",
+        "@type": "ds:CORDEXdomain",
+        "rdfs:label": "WAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_WAS-22_MIROC5_historical_r1i1p1_RegCM4-7_vsbjpq",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_WAS-22_MIROC5_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_MIROC5_historical_r1i1p1_RegCM4-7_vsbjpq",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.bahyji",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.hfuyjd"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ORNL",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "ORNL"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ORNL-RegCM4-7-WAS-22-v0",
+        "@type": "ds:RCM",
+        "rdfs:label": "RegCM4-7",
+        "ds:versionTag": "v0",
+        "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasDrivingGCM": [
+          {
+            "@id": "ipcc:MIROC5",
+            "@type": "ds:GCM",
+            "rdfs:label": "MIROC5",
+            "ds:wasDevelopedBy": {
+              "@id": "ipcc:MIROC",
+              "@type": "ds:ModellingCenter",
+              "rdfs:label": "MIROC"
+            }
+          },
+          {
+            "@id": "ipcc:NORESM1-M"
+          },
+          {
+            "@id": "ipcc:MPI-ESM-MR"
+          }
+        ],
+        "ds:wasDevelopedBy": {
+          "@id": "ipcc:ORNL"
+        }
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:WAS-22"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_WAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_raxodm",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_WAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_raxodm",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.aiowbs",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.hfuyjd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-WAS-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:WAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_WAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_ksbcyf",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_WAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_ksbcyf",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.nmrxhs",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.hfuyjd"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ORNL"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ORNL-RegCM4-7-WAS-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:WAS-22"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_REMO2015_xlpuzb",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_REMO2015_xlpuzb",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.yjolmi",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.hfuyjd"
+        }
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:GERICS-REMO2015-WAS-22-v1"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:WAS-22"
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:GERICS"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "#CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_ilyasz",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "ds:modelRun": "r1i1p1",
+      "ds:hasDatasetSubset": {
+        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_ilyasz",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.tfgmid",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "[1970-2006)",
+          "prov:startedAtTime": "1970-01-01T00:00:00Z",
+          "prov:endedAtTime": "2005-12-31T23:59:59Z"
+        },
+        "ds:isMemberOf": {
+          "@id": "#Ensemble.hfuyjd"
+        }
+      },
+      "ds:hasModellingCenter": {
+        "@id": "ipcc:ORNL"
+      },
+      "ds:hasSimulationModel": {
+        "@id": "#cx5m:ORNL-RegCM4-7-WAS-22-v0"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ipcc:WAS-22"
+      },
+      "ds:hasExperiment": {
+        "@id": "ipcc:Historical"
+      },
+      "ds:hasDataProvider": {
+        "@id": "ds:C3S"
+      },
+      "ds:hasProject": {
+        "@id": "ds:CORDEX-CORE"
+      }
+    },
+    {
+      "@id": "ds:Copernicus-CORDEX-CMIP5",
+      "@type": "ds:Dataset",
+      "rdfs:label": "CICA-CORDEX-CMIP5",
+      "prov:wasDerivedFrom": {
+        "@id": "ds:C3S-CORDEX-GrandEnsemble"
+      }
+    }
+  ]
+}
+
