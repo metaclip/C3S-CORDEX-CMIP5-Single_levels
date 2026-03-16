@@ -1,11 +1,11 @@
 {
 	"@context": {
-		"ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/devel/datasource/datasource.owl#",
+		"ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/master/archive/datasource/1.0.0/datasource.owl#",
 		"prov": "http://www.w3.org/ns/prov#",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 		"dc": "http://purl.org/dc/elements/1.1/",
-		"ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/devel/ipcc_terms.owl#",
-		"cx5m": "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-models.owx#",
+		"ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/main/archive/0.8/ipcc_terms.owl#",
+		"cx5m": "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/archive/CORDEX-CMIP5-models/0.0/CORDEX-CMIP5-models.owl#",
 		"xsd":  "http://www.w3.org/2001/XMLSchema#",
   		"prov:startedAtTime": {"@type": "xsd:dateTime"},
   		"prov:endedAtTime":   {"@type": "xsd:dateTime"}

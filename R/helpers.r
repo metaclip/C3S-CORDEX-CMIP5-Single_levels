@@ -3,7 +3,7 @@ library(metaclipR)
 library(igraph)
 
 
-models.voc <- "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-models.owx"
+models.voc <- "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/archive/CORDEX-CMIP5-models/0.0/CORDEX-CMIP5-models.owl"
 
 
 #' @title Individual entity IRI checker
