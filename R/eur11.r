@@ -59,6 +59,8 @@ for (i in 1:length(exps)) {
     mem <- exp.subset$ensemble[j]
     rcmv <- exp.subset$rcm_version[j]
 
+    # Consistent dataset label
+    dlabel <- exp.subset$member_id_CICA[j]
 
     ## Metadata for RCM components and miscellaneous details
     ind_rcm <- paste(exp.subset$rcm_institution[j], rcm, rcmv, sep = "_")
@@ -81,9 +83,9 @@ for (i in 1:length(exps)) {
     ## /////////////////////////////////////////////////////////////////
 
     ## Dataset
-    dlabel <- paste("EUR-11", gcm, exp, mem, rcm, sep = "_")
-    ds <- paste0(dlabel, "_", randomName())
-    message("[",format(Sys.time(), "%H:%M:%S"),"] Processing Dataset ", ds)
+    ## dlabel <- paste("EUR-11", gcm, exp, mem, rcm, sep = "_")
+    ds <- paste0(dlabel, ".", randomName())
+    message("[",format(Sys.time(), "%H:%M:%S"),"] Processing Dataset ", dlabel)
 
     # Dataset Individuals from CORDEX-CMIP5 vocabulary are currently ignored
 
