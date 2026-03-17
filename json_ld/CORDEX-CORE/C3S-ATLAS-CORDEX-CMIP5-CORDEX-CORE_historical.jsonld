@@ -1,11 +1,11 @@
 {
   "@context": {
-    "ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/devel/datasource/datasource.owl#",
+    "ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/master/archive/datasource/1.0.0/datasource.owl#",
     "prov": "http://www.w3.org/ns/prov#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/devel/ipcc_terms.owl#",
-    "cx5m": "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-models.owx#",
+    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/main/archive/0.8/ipcc_terms.owl#",
+    "cx5m": "https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/archive/CORDEX-CMIP5-models/0.0/CORDEX-CMIP5-models.owl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "prov:startedAtTime": {
       "@type": "xsd:dateTime"
@@ -16,16 +16,16 @@
   },
   "@graph": [
     {
-      "@id": "#CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_REMO2015_gmlsax",
+      "@id": "#MOHC_HadGEM2-ES_REMO.ymvler",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_REMO2015_gmlsax",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.ymvler",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.lnfpgc",
+          "@id": "#Ensemble.ulnwfa",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -35,7 +35,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qdlwck",
+          "@id": "#TemporalPeriod.uikdfx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -85,6 +85,38 @@
             }
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "GERICS_REMO2015_v1_OceanModel",
+          "ds:oceanRepresentationMode": "prescribed SST and SIC"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "GERICS_REMO2015_v1_LandSurfaceModel",
+          "ds:lsmLevels": "5",
+          "ds:lsmComponentName": "Rechid et al. (2009)",
+          "ds:lsmMisc": "a tile-based scheme including annual cycle of albedo"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "GERICS_REMO2015_v1_AerosolModel",
+          "ds:aerosolMisc": "Tanré et al. (1984) climatology",
+          "ds:aerosolParameterizationDescription": "Prescribed"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "GERICS_REMO2015_v1_AtmosphericModel",
+          "ds:atmosMisc": "hybrid sigma-pressure coordinate system",
+          "ds:toaLevels": "27 (0 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic model built on German Weather Service (DWD) Europa–Modell (EM) weather prediction model dynamics (Majewski, 1991) and ECHAM physics (Roeckner et al., 1996).",
+          "ds:atmosConvectionScheme": "Mass flux (Tiedtke, 1989) with modifications after Nordeng (1994) and Pfeifer (2006)",
+          "ds:atmosShortwaveRadiationScheme": "Morcrette et al. (1986) with modifications for additional greenhouse gases, 14.6 μm band of ozone and various types of aerosols. Continuum absorption after Giorgetta and Wild (1995).",
+          "ds:atmosLongwaveRadiationScheme": "Morcrette et al. (1986) with modifications for additional greenhouse gases, 14.6 μm band of ozone and various types of aerosols. Continuum absorption after Giorgetta and Wild (1995)."
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -111,23 +143,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_hdxjym",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.fltyrs",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_hdxjym",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.fltyrs",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bhvisk",
+          "@id": "#TemporalPeriod.zcnatb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.lnfpgc"
+          "@id": "#Ensemble.ulnwfa"
         }
       },
       "ds:hasModellingCenter": {
@@ -157,6 +189,53 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_UrbanModel",
+          "@type": "ds:UrbanLandSurfaceModel",
+          "rdfs:label": "ICTP_RegCM4-7_v0_UrbanModel",
+          "ds:urbanLsmRepresentation": "CLM4.5"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LakeModel",
+          "@type": "ds:LakeModel",
+          "rdfs:label": "ICTP_RegCM4-7_v0_LakeModel",
+          "ds:lakeRepresentation": "None"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "ICTP_RegCM4-7_v0_OceanModel",
+          "ds:oceanComponentReference": "Surface layer (Zeng et al., 1998)",
+          "ds:oceanMisc": "no SI",
+          "ds:oceanRepresentationMode": "Prescribed SST"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "ICTP_RegCM4-7_v0_LandSurfaceModel",
+          "ds:lsmMaxDepth": "3.8 m",
+          "ds:lsmLevels": "10",
+          "ds:lsmComponentName": "CLM4.5",
+          "ds:lsmMisc": "No subgridding (nsg=1)"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "ICTP_RegCM4-7_v0_AerosolModel",
+          "ds:aerosolParameterizationDescription": "No aerosol effects considered"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "ICTP_RegCM4-7_v0_AtmosphericModel",
+          "ds:atmosMicrophysicsScheme": "Explicit moisture (SUBEX; Pal et al 2000)",
+          "ds:atmosPblScheme": "Holtslag (1990)",
+          "ds:toaLevels": "23 (50 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic dynamical core",
+          "ds:atmosConvectionScheme": "Tiedtke (1996) land, Kain and Fritsch (1990), Kain (2004) over ocean",
+          "ds:atmosShortwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl et al., 1998)",
+          "ds:atmosLongwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl et al., 1998)"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:ICTP"
         }
@@ -175,23 +254,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AFR-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_yngcwa",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.cybekx",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AFR-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_yngcwa",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.cybekx",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.calner",
+          "@id": "#TemporalPeriod.xswrue",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.lnfpgc"
+          "@id": "#Ensemble.ulnwfa"
         }
       },
       "ds:hasModellingCenter": {
@@ -214,23 +293,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AFR-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_ypelto",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.utombs",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AFR-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_ypelto",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.utombs",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.otxqmc",
+          "@id": "#TemporalPeriod.mhilwb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.lnfpgc"
+          "@id": "#Ensemble.ulnwfa"
         }
       },
       "ds:hasModellingCenter": {
@@ -253,23 +332,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_REMO2015_lbqjft",
+      "@id": "#NCC_NorESM1-M_REMO.xksjmc",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_REMO2015_lbqjft",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.xksjmc",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fyetxl",
+          "@id": "#TemporalPeriod.ysqchr",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.lnfpgc"
+          "@id": "#Ensemble.ulnwfa"
         }
       },
       "ds:hasModellingCenter": {
@@ -292,23 +371,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_RegCM4-7_yhrvub",
+      "@id": "#NCC_NorESM1-M_RegCM.lviwpz",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AFR-22_NorESM1-M_historical_r1i1p1_RegCM4-7_yhrvub",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.lviwpz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ytpgnb",
+          "@id": "#TemporalPeriod.knhwtp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.lnfpgc"
+          "@id": "#Ensemble.ulnwfa"
         }
       },
       "ds:hasModellingCenter": {
@@ -331,16 +410,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_bgykup",
+      "@id": "#MOHC_HadGEM2-ES_REMO.wdgbcj",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_bgykup",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.wdgbcj",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.cudlta",
+          "@id": "#Ensemble.lqfvbr",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -348,7 +427,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dcwzor",
+          "@id": "#TemporalPeriod.pdrnmb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -372,6 +451,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -395,23 +486,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_khpiox",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.oicavh",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_khpiox",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.oicavh",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ihrgye",
+          "@id": "#TemporalPeriod.eufhop",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.cudlta"
+          "@id": "#Ensemble.lqfvbr"
         }
       },
       "ds:hasSimulationModel": {
@@ -431,6 +522,24 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_UrbanModel"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LakeModel"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:ICTP"
         }
@@ -452,23 +561,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AUS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_idyleq",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.wnaduj",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AUS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_idyleq",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.wnaduj",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.brtfcp",
+          "@id": "#TemporalPeriod.rgmxyv",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.cudlta"
+          "@id": "#Ensemble.lqfvbr"
         }
       },
       "ds:hasSimulationModel": {
@@ -491,23 +600,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AUS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_jiwsmv",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.obkplx",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AUS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_jiwsmv",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.obkplx",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.srpjhu",
+          "@id": "#TemporalPeriod.yetwdj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.cudlta"
+          "@id": "#Ensemble.lqfvbr"
         }
       },
       "ds:hasSimulationModel": {
@@ -530,23 +639,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_REMO2015_barvly",
+      "@id": "#NCC_NorESM1-M_REMO.bxrtwi",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_REMO2015_barvly",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.bxrtwi",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hitmpg",
+          "@id": "#TemporalPeriod.hblivq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.cudlta"
+          "@id": "#Ensemble.lqfvbr"
         }
       },
       "ds:hasSimulationModel": {
@@ -569,23 +678,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_mvcszn",
+      "@id": "#NCC_NorESM1-M_RegCM.eimxku",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_AUS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_mvcszn",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.eimxku",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dbxzrs",
+          "@id": "#TemporalPeriod.zsydmv",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.cudlta"
+          "@id": "#Ensemble.lqfvbr"
         }
       },
       "ds:hasSimulationModel": {
@@ -608,16 +717,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_wdsfpc",
+      "@id": "#MOHC_HadGEM2-ES_REMO.hqbfeu",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_wdsfpc",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.hqbfeu",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.mscafj",
+          "@id": "#Ensemble.dyoagk",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -625,7 +734,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.vwdkzo",
+          "@id": "#TemporalPeriod.beryak",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -649,6 +758,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -672,23 +793,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_zequpc",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.vywxdk",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_zequpc",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.vywxdk",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.lagcpf",
+          "@id": "#TemporalPeriod.aienuc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.mscafj"
+          "@id": "#Ensemble.dyoagk"
         }
       },
       "ds:hasSimulationModel": {
@@ -715,6 +836,24 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_UrbanModel"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LakeModel"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:ICTP"
         }
@@ -736,23 +875,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_CAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_gtupiq",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.euajco",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_CAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_gtupiq",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.euajco",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.gdiuzn",
+          "@id": "#TemporalPeriod.yzbsnc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.mscafj"
+          "@id": "#Ensemble.dyoagk"
         }
       },
       "ds:hasSimulationModel": {
@@ -775,23 +914,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_CAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_bwzyou",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.pxoakc",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_CAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_bwzyou",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.pxoakc",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.wvdmpe",
+          "@id": "#TemporalPeriod.cnfxzp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.mscafj"
+          "@id": "#Ensemble.dyoagk"
         }
       },
       "ds:hasSimulationModel": {
@@ -814,23 +953,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_CAM-22_NorESM1-M_historical_r1i1p1_REMO2015_jvqiwt",
+      "@id": "#NCC_NorESM1-M_REMO.iucgpw",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_CAM-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_NorESM1-M_historical_r1i1p1_REMO2015_jvqiwt",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.iucgpw",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.skdzjr",
+          "@id": "#TemporalPeriod.yfdswa",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.mscafj"
+          "@id": "#Ensemble.dyoagk"
         }
       },
       "ds:hasSimulationModel": {
@@ -853,23 +992,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_CAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4-7_tqygsm",
+      "@id": "#NOAA-GFDL_GFDL-ESM2M_RegCM.giarlo",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_CAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "NOAA-GFDL_GFDL-ESM2M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_CAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4-7_tqygsm",
+        "@id": "#DatasetSubset.NOAA-GFDL_GFDL-ESM2M_RegCM.giarlo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.vfybue",
+          "@id": "#TemporalPeriod.xlqdys",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.mscafj"
+          "@id": "#Ensemble.dyoagk"
         }
       },
       "ds:hasSimulationModel": {
@@ -892,16 +1031,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_cgkwea",
+      "@id": "#MOHC_HadGEM2-ES_REMO.oxrugv",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_cgkwea",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.oxrugv",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.wydxpt",
+          "@id": "#Ensemble.expsod",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -909,7 +1048,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.mxwotu",
+          "@id": "#TemporalPeriod.pfxehg",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -933,6 +1072,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -956,23 +1107,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-4_yctfhm",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.xiavhs",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-4",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_HadGEM2-ES_historical_r1i1p1_RegCM4-4_yctfhm",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.xiavhs",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hdfsjy",
+          "@id": "#TemporalPeriod.mgpfbl",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.wydxpt"
+          "@id": "#Ensemble.expsod"
         }
       },
       "ds:hasSimulationModel": {
@@ -981,6 +1132,53 @@
         "rdfs:label": "RegCM4-4",
         "ds:versionTag": "v0",
         "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-4_v0_UrbanModel",
+          "@type": "ds:UrbanLandSurfaceModel",
+          "rdfs:label": "ICTP_RegCM4-4_v0_UrbanModel",
+          "ds:urbanLsmRepresentation": "None"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-4_v0_LakeModel",
+          "@type": "ds:LakeModel",
+          "rdfs:label": "ICTP_RegCM4-4_v0_LakeModel",
+          "ds:lakeRepresentation": "None"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-4_v0_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "ICTP_RegCM4-4_v0_OceanModel",
+          "ds:oceanComponentReference": "Surface layer (Zeng et al., 1998)",
+          "ds:oceanMisc": "no SI",
+          "ds:oceanRepresentationMode": "Prescribed SST"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-4_v0_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "ICTP_RegCM4-4_v0_LandSurfaceModel",
+          "ds:lsmMaxDepth": "3 m",
+          "ds:lsmLevels": "2",
+          "ds:lsmComponentName": "BATS1e",
+          "ds:lsmMisc": "No subgridding (nsg=1)"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-4_v0_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "ICTP_RegCM4-4_v0_AerosolModel",
+          "ds:aerosolParameterizationDescription": "No aerosol effects considered"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-4_v0_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "ICTP_RegCM4-4_v0_AtmosphericModel",
+          "ds:atmosMicrophysicsScheme": "Explicit moisture (SUBEX; Pal et al 2000)",
+          "ds:atmosPblScheme": "Holtslag (1990)",
+          "ds:toaLevels": "18 (50 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic dynamical core",
+          "ds:atmosConvectionScheme": "Emanuel (1991)",
+          "ds:atmosShortwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl, 1998).",
+          "ds:atmosLongwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl, 1998)."
+        },
         "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NORESM1-M"
@@ -1013,23 +1211,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_uiaksr",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.dwxnpi",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_uiaksr",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.dwxnpi",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.capzfy",
+          "@id": "#TemporalPeriod.agwyti",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.wydxpt"
+          "@id": "#Ensemble.expsod"
         }
       },
       "ds:hasSimulationModel": {
@@ -1052,23 +1250,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-4_hsjtav",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.oczdug",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-4",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-4_hsjtav",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.oczdug",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.apdboy",
+          "@id": "#TemporalPeriod.dlvaqr",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.wydxpt"
+          "@id": "#Ensemble.expsod"
         }
       },
       "ds:hasSimulationModel": {
@@ -1091,23 +1289,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_REMO2015_ahfcbi",
+      "@id": "#NCC_NorESM1-M_REMO.kxqbtz",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_REMO2015_ahfcbi",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.kxqbtz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pcmway",
+          "@id": "#TemporalPeriod.tlwdxn",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.wydxpt"
+          "@id": "#Ensemble.expsod"
         }
       },
       "ds:hasSimulationModel": {
@@ -1130,23 +1328,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_RegCM4-4_brghdi",
+      "@id": "#NCC_NorESM1-M_RegCM.ehazyc",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_RegCM4-4",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EAS-22_NorESM1-M_historical_r1i1p1_RegCM4-4_brghdi",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.ehazyc",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.jcbmol",
+          "@id": "#TemporalPeriod.wjnert",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.wydxpt"
+          "@id": "#Ensemble.expsod"
         }
       },
       "ds:hasSimulationModel": {
@@ -1169,16 +1367,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_REMO2015_esamjx",
+      "@id": "#MOHC_HadGEM2-ES_REMO.avtysk",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_REMO2015_esamjx",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.avtysk",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.miwpjr",
+          "@id": "#Ensemble.lwmitn",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -1186,7 +1384,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hzftbc",
+          "@id": "#TemporalPeriod.htzvyk",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -1210,6 +1408,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -1233,23 +1443,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_RegCM4-6_zmcwxp",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.jokqxy",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_RegCM4-6",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_HadGEM2-ES_historical_r1i1p1_RegCM4-6_zmcwxp",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.jokqxy",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.mkegos",
+          "@id": "#TemporalPeriod.zfkegu",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.miwpjr"
+          "@id": "#Ensemble.lwmitn"
         }
       },
       "ds:hasSimulationModel": {
@@ -1258,6 +1468,53 @@
         "rdfs:label": "RegCM4-6",
         "ds:versionTag": "v1",
         "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-6_v1_UrbanModel",
+          "@type": "ds:UrbanLandSurfaceModel",
+          "rdfs:label": "ICTP_RegCM4-6_v1_UrbanModel",
+          "ds:urbanLsmRepresentation": "CLM4.5"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-6_v1_LakeModel",
+          "@type": "ds:LakeModel",
+          "rdfs:label": "ICTP_RegCM4-6_v1_LakeModel",
+          "ds:lakeRepresentation": "None"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-6_v1_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "ICTP_RegCM4-6_v1_OceanModel",
+          "ds:oceanComponentReference": "Surface layer (Zeng et al., 1998)",
+          "ds:oceanMisc": "no SI",
+          "ds:oceanRepresentationMode": "Prescribed SST"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-6_v1_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "ICTP_RegCM4-6_v1_LandSurfaceModel",
+          "ds:lsmMaxDepth": "3.8 m",
+          "ds:lsmLevels": "10",
+          "ds:lsmComponentName": "CLM4.5",
+          "ds:lsmMisc": "No subgridding (nsg=1)"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-6_v1_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "ICTP_RegCM4-6_v1_AerosolModel",
+          "ds:aerosolParameterizationDescription": "No aerosol effects considered"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-6_v1_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "ICTP_RegCM4-6_v1_AtmosphericModel",
+          "ds:atmosMicrophysicsScheme": "Explicit moisture (SUBEX; Pal et al 2000)",
+          "ds:atmosPblScheme": "UW (Bretherton and McCaa, 2004)",
+          "ds:toaLevels": "23 (50 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic dynamical core",
+          "ds:atmosConvectionScheme": "Tiedtke (1996)",
+          "ds:atmosShortwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl, 1998).",
+          "ds:atmosLongwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl, 1998)."
+        },
         "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:NORESM1-M"
@@ -1290,23 +1547,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r3i1p1_REMO2015_qshejp",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.vobzls",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r3i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r3i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r3i1p1_REMO2015_qshejp",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.vobzls",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.wbvphf",
+          "@id": "#TemporalPeriod.rduizj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.miwpjr"
+          "@id": "#Ensemble.lwmitn"
         }
       },
       "ds:hasSimulationModel": {
@@ -1329,23 +1586,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r1i1p1_RegCM4-6_lznhkm",
+      "@id": "#MPI-M_MPI-ESM-LR_RegCM.algxvr",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r1i1p1_RegCM4-6",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_MPI-ESM-LR_historical_r1i1p1_RegCM4-6_lznhkm",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_RegCM.algxvr",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pogbvy",
+          "@id": "#TemporalPeriod.mvaswi",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.miwpjr"
+          "@id": "#Ensemble.lwmitn"
         }
       },
       "ds:hasSimulationModel": {
@@ -1368,23 +1625,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_REMO2015_uprnlj",
+      "@id": "#NCC_NorESM1-M_REMO.dtrbfo",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_REMO2015_uprnlj",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.dtrbfo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.elqpja",
+          "@id": "#TemporalPeriod.lzntrd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.miwpjr"
+          "@id": "#Ensemble.lwmitn"
         }
       },
       "ds:hasSimulationModel": {
@@ -1407,23 +1664,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_RegCM4-6_fhywzd",
+      "@id": "#NCC_NorESM1-M_RegCM.rfhncp",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_RegCM4-6",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_EUR-11_NorESM1-M_historical_r1i1p1_RegCM4-6_fhywzd",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.rfhncp",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qjzdct",
+          "@id": "#TemporalPeriod.imqcdo",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.miwpjr"
+          "@id": "#Ensemble.lwmitn"
         }
       },
       "ds:hasSimulationModel": {
@@ -1446,16 +1703,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_bohdyx",
+      "@id": "#MOHC_HadGEM2-ES_REMO.sjplwq",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_bohdyx",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.sjplwq",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.bghuxv",
+          "@id": "#Ensemble.rnjwki",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -1463,7 +1720,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dklutc",
+          "@id": "#TemporalPeriod.ocakbt",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -1487,6 +1744,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -1510,23 +1779,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4_cimtzv",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.rlmdky",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4_cimtzv",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.rlmdky",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.sizgmd",
+          "@id": "#TemporalPeriod.weqpza",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.bghuxv"
+          "@id": "#Ensemble.rnjwki"
         }
       },
       "ds:hasModellingCenter": {
@@ -1540,6 +1809,54 @@
         "rdfs:label": "RegCM4",
         "ds:versionTag": "v4-4-rc8",
         "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ISU_RegCM4_v4-4-rc8_UrbanModel",
+          "@type": "ds:UrbanLandSurfaceModel",
+          "rdfs:label": "ISU_RegCM4_v4-4-rc8_UrbanModel",
+          "ds:urbanLsmRepresentation": "None"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ISU_RegCM4_v4-4-rc8_LakeModel",
+          "@type": "ds:LakeModel",
+          "rdfs:label": "ISU_RegCM4_v4-4-rc8_LakeModel",
+          "ds:lakeRepresentation": "Hostetler et al. (1993)"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ISU_RegCM4_v4-4-rc8_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "ISU_RegCM4_v4-4-rc8_OceanModel",
+          "ds:oceanComponentReference": "Surface layer (Zeng et al., 1998)",
+          "ds:oceanMisc": "SST prescribed using atmospheric skin temperature instead of ocean skin temperature",
+          "ds:oceanRepresentationMode": "prescribed SST, no SI"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ISU_RegCM4_v4-4-rc8_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "ISU_RegCM4_v4-4-rc8_LandSurfaceModel",
+          "ds:lsmMaxDepth": "3 m",
+          "ds:lsmLevels": "2",
+          "ds:lsmComponentName": "BATS1e",
+          "ds:lsmMisc": "No subgridding (nsg=1)"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ISU_RegCM4_v4-4-rc8_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "ISU_RegCM4_v4-4-rc8_AerosolModel",
+          "ds:aerosolParameterizationDescription": "No aerosol effects considered"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ISU_RegCM4_v4-4-rc8_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "ISU_RegCM4_v4-4-rc8_AtmosphericModel",
+          "ds:atmosMisc": "NA-CORDEX (2017)",
+          "ds:atmosMicrophysicsScheme": "SUBEX",
+          "ds:atmosPblScheme": "Holtslag (1990)",
+          "ds:toaLevels": "18 (50 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic dynamical core",
+          "ds:atmosConvectionScheme": "Grell with Fritsch-Chappell closure over land; Emanuel (1991) over water",
+          "ds:atmosShortwaveRadiationScheme": "Kiehl",
+          "ds:atmosLongwaveRadiationScheme": "Kiehl"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:ISU"
         },
@@ -1566,23 +1883,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_oevuji",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.qgkcpt",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_oevuji",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.qgkcpt",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ytlsbd",
+          "@id": "#TemporalPeriod.wvpmqi",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.bghuxv"
+          "@id": "#Ensemble.rnjwki"
         }
       },
       "ds:hasSimulationModel": {
@@ -1605,23 +1922,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_RegCM4_imuwlg",
+      "@id": "#MPI-M_MPI-ESM-LR_RegCM.cmtxbo",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_RegCM4",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_MPI-ESM-LR_historical_r1i1p1_RegCM4_imuwlg",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_RegCM.cmtxbo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fcdzyt",
+          "@id": "#TemporalPeriod.dpwqyb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.bghuxv"
+          "@id": "#Ensemble.rnjwki"
         }
       },
       "ds:hasModellingCenter": {
@@ -1635,6 +1952,54 @@
         "rdfs:label": "RegCM4",
         "ds:versionTag": "v4-4-rc8",
         "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.NCAR_RegCM4_v4-4-rc8_UrbanModel",
+          "@type": "ds:UrbanLandSurfaceModel",
+          "rdfs:label": "NCAR_RegCM4_v4-4-rc8_UrbanModel",
+          "ds:urbanLsmRepresentation": "None"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.NCAR_RegCM4_v4-4-rc8_LakeModel",
+          "@type": "ds:LakeModel",
+          "rdfs:label": "NCAR_RegCM4_v4-4-rc8_LakeModel",
+          "ds:lakeRepresentation": "Hostetler et al. (1993)"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.NCAR_RegCM4_v4-4-rc8_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "NCAR_RegCM4_v4-4-rc8_OceanModel",
+          "ds:oceanComponentReference": "Surface layer (Zeng et al., 1998)",
+          "ds:oceanMisc": "SST prescribed using atmospheric skin temperature instead of ocean skin temperature",
+          "ds:oceanRepresentationMode": "prescribed SST, no SI"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.NCAR_RegCM4_v4-4-rc8_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "NCAR_RegCM4_v4-4-rc8_LandSurfaceModel",
+          "ds:lsmMaxDepth": "3 m",
+          "ds:lsmLevels": "2",
+          "ds:lsmComponentName": "BATS1e",
+          "ds:lsmMisc": "No subgridding (nsg=1)"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.NCAR_RegCM4_v4-4-rc8_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "NCAR_RegCM4_v4-4-rc8_AerosolModel",
+          "ds:aerosolParameterizationDescription": "No aerosol effects considered"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.NCAR_RegCM4_v4-4-rc8_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "NCAR_RegCM4_v4-4-rc8_AtmosphericModel",
+          "ds:atmosMisc": "NA-CORDEX (2017)",
+          "ds:atmosMicrophysicsScheme": "SUBEX",
+          "ds:atmosPblScheme": "Holtslag (1990)",
+          "ds:toaLevels": "18 (50 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic dynamical core",
+          "ds:atmosConvectionScheme": "Grell with Fritsch-Chappell closure over land; Emanuel (1991) over water",
+          "ds:atmosShortwaveRadiationScheme": "Kiehl",
+          "ds:atmosLongwaveRadiationScheme": "Kiehl"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:NCAR"
         },
@@ -1656,23 +2021,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_NAM-22_NorESM1-M_historical_r1i1p1_REMO2015_ohgpkr",
+      "@id": "#NCC_NorESM1-M_REMO.ehwtxu",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_NAM-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_NorESM1-M_historical_r1i1p1_REMO2015_ohgpkr",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.ehwtxu",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fmupyj",
+          "@id": "#TemporalPeriod.uoxwae",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.bghuxv"
+          "@id": "#Ensemble.rnjwki"
         }
       },
       "ds:hasSimulationModel": {
@@ -1695,23 +2060,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_NAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4_nvkmex",
+      "@id": "#NOAA-GFDL_GFDL-ESM2M_RegCM.osqpfd",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_NAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4",
+      "rdfs:label": "NOAA-GFDL_GFDL-ESM2M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_NAM-22_GFDL-ESM2M_historical_r1i1p1_RegCM4_nvkmex",
+        "@id": "#DatasetSubset.NOAA-GFDL_GFDL-ESM2M_RegCM.osqpfd",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.lmsqye",
+          "@id": "#TemporalPeriod.ngwmhc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.bghuxv"
+          "@id": "#Ensemble.rnjwki"
         }
       },
       "ds:hasModellingCenter": {
@@ -1734,16 +2099,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_nircyv",
+      "@id": "#MOHC_HadGEM2-ES_REMO.vprekl",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_REMO2015_nircyv",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.vprekl",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.obsakr",
+          "@id": "#Ensemble.xyckms",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -1751,7 +2116,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qywvxt",
+          "@id": "#TemporalPeriod.qhbzim",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -1775,6 +2140,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -1798,23 +2175,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_zotbli",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.dulbxn",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_zotbli",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.dulbxn",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cftrlz",
+          "@id": "#TemporalPeriod.wxcsao",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.obsakr"
+          "@id": "#Ensemble.xyckms"
         }
       },
       "ds:hasSimulationModel": {
@@ -1834,6 +2211,24 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_UrbanModel"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LakeModel"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:ICTP"
         }
@@ -1855,23 +2250,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_lyufei",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.dvmltz",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_lyufei",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.dvmltz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ugmxdn",
+          "@id": "#TemporalPeriod.pjugfy",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.obsakr"
+          "@id": "#Ensemble.xyckms"
         }
       },
       "ds:hasSimulationModel": {
@@ -1894,23 +2289,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_cshwye",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.yxmzvo",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_cshwye",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.yxmzvo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zedoqw",
+          "@id": "#TemporalPeriod.meljrz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.obsakr"
+          "@id": "#Ensemble.xyckms"
         }
       },
       "ds:hasSimulationModel": {
@@ -1933,23 +2328,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_REMO2015_slxtfm",
+      "@id": "#NCC_NorESM1-M_REMO.xjpbiz",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_REMO2015_slxtfm",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.xjpbiz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.eduqhc",
+          "@id": "#TemporalPeriod.qavjng",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.obsakr"
+          "@id": "#Ensemble.xyckms"
         }
       },
       "ds:hasSimulationModel": {
@@ -1972,23 +2367,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_RegCM4-7_cfisgp",
+      "@id": "#NCC_NorESM1-M_RegCM.oprxkl",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SAM-22_NorESM1-M_historical_r1i1p1_RegCM4-7_cfisgp",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.oprxkl",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.iyfrtc",
+          "@id": "#TemporalPeriod.dowucs",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.obsakr"
+          "@id": "#Ensemble.xyckms"
         }
       },
       "ds:hasSimulationModel": {
@@ -2011,16 +2406,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_REMO2015_kdvswu",
+      "@id": "#MOHC_HadGEM2-ES_REMO.xvmygi",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_REMO2015_kdvswu",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.xvmygi",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.qybzrn",
+          "@id": "#Ensemble.iabndl",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -2028,7 +2423,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.cqwdhr",
+          "@id": "#TemporalPeriod.nxivgk",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -2052,6 +2447,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -2075,23 +2482,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_wymteh",
+      "@id": "#MOHC_HadGEM2-ES_RegCM.lqermp",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MOHC_HadGEM2-ES_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_HadGEM2-ES_historical_r1i1p1_RegCM4-7_wymteh",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_RegCM.lqermp",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.kjefit",
+          "@id": "#TemporalPeriod.rclyfu",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.qybzrn"
+          "@id": "#Ensemble.iabndl"
         }
       },
       "ds:hasSimulationModel": {
@@ -2111,6 +2518,24 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_UrbanModel"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LakeModel"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ICTP_RegCM4-7_v0_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:ICTP"
         }
@@ -2132,23 +2557,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SEA-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_tgcudv",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.twxhvz",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SEA-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_tgcudv",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.twxhvz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ljsezu",
+          "@id": "#TemporalPeriod.srtgve",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.qybzrn"
+          "@id": "#Ensemble.iabndl"
         }
       },
       "ds:hasSimulationModel": {
@@ -2171,23 +2596,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SEA-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_emotqf",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.abdyml",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SEA-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_emotqf",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.abdyml",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zrdlac",
+          "@id": "#TemporalPeriod.ngvixb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.qybzrn"
+          "@id": "#Ensemble.iabndl"
         }
       },
       "ds:hasSimulationModel": {
@@ -2210,23 +2635,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_REMO2015_qsdziu",
+      "@id": "#NCC_NorESM1-M_REMO.qzotsn",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_REMO2015_qsdziu",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.qzotsn",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.chswpy",
+          "@id": "#TemporalPeriod.mzfdlh",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.qybzrn"
+          "@id": "#Ensemble.iabndl"
         }
       },
       "ds:hasSimulationModel": {
@@ -2249,23 +2674,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_RegCM4-7_ixkpuf",
+      "@id": "#NCC_NorESM1-M_RegCM.rniwzt",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_SEA-22_NorESM1-M_historical_r1i1p1_RegCM4-7_ixkpuf",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.rniwzt",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.kyuopt",
+          "@id": "#TemporalPeriod.gtnzce",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.qybzrn"
+          "@id": "#Ensemble.iabndl"
         }
       },
       "ds:hasSimulationModel": {
@@ -2288,16 +2713,16 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_WAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_yvimxc",
+      "@id": "#MOHC_HadGEM2-ES_REMO.fucyln",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_WAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MOHC_HadGEM2-ES_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_HadGEM2-ES_historical_r1i1p1_REMO2015_yvimxc",
+        "@id": "#DatasetSubset.MOHC_HadGEM2-ES_REMO.fucyln",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zagbef",
+          "@id": "#Ensemble.bnvrgo",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble",
           "ds:isMemberOf": {
@@ -2305,7 +2730,7 @@
           }
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ygvzwd",
+          "@id": "#TemporalPeriod.cfgywx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
@@ -2329,6 +2754,18 @@
             "@id": "ipcc:HADGEM2-ES"
           }
         ],
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_OceanModel"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_LandSurfaceModel"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AerosolModel"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.GERICS_REMO2015_v1_AtmosphericModel"
+        },
         "ds:wasDevelopedBy": {
           "@id": "ipcc:GERICS"
         }
@@ -2352,23 +2789,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_WAS-22_MIROC5_historical_r1i1p1_RegCM4-7_rkvaod",
+      "@id": "#MIROC_MIROC5_RegCM.lobahr",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_WAS-22_MIROC5_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MIROC_MIROC5_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_MIROC5_historical_r1i1p1_RegCM4-7_rkvaod",
+        "@id": "#DatasetSubset.MIROC_MIROC5_RegCM.lobahr",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hecjvr",
+          "@id": "#TemporalPeriod.bxolgi",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zagbef"
+          "@id": "#Ensemble.bnvrgo"
         }
       },
       "ds:hasModellingCenter": {
@@ -2382,6 +2819,53 @@
         "rdfs:label": "RegCM4-7",
         "ds:versionTag": "v0",
         "ds:simulationNotes": "https://zenodo.org/records/6553526",
+        "ds:hasUrbanLandSurfaceModelComponent": {
+          "@id": "#Component.ORNL_RegCM4-7_v0_UrbanModel",
+          "@type": "ds:UrbanLandSurfaceModel",
+          "rdfs:label": "ORNL_RegCM4-7_v0_UrbanModel",
+          "ds:urbanLsmRepresentation": "CLM4.5"
+        },
+        "ds:hasLakeModelComponent": {
+          "@id": "#Component.ORNL_RegCM4-7_v0_LakeModel",
+          "@type": "ds:LakeModel",
+          "rdfs:label": "ORNL_RegCM4-7_v0_LakeModel",
+          "ds:lakeRepresentation": "None"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "#Component.ORNL_RegCM4-7_v0_OceanModel",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "ORNL_RegCM4-7_v0_OceanModel",
+          "ds:oceanComponentReference": "Surface layer (Zeng et al., 1998)",
+          "ds:oceanMisc": "no SI",
+          "ds:oceanRepresentationMode": "Prescribed SST"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "#Component.ORNL_RegCM4-7_v0_LandSurfaceModel",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "ORNL_RegCM4-7_v0_LandSurfaceModel",
+          "ds:lsmMaxDepth": "3.8 m",
+          "ds:lsmLevels": "10",
+          "ds:lsmComponentName": "CLM4.5",
+          "ds:lsmMisc": "No subgridding (nsg=1)"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "#Component.ORNL_RegCM4-7_v0_AerosolModel",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "ORNL_RegCM4-7_v0_AerosolModel",
+          "ds:aerosolParameterizationDescription": "No aerosol effects considered"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "#Component.ORNL_RegCM4-7_v0_AtmosphericModel",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "ORNL_RegCM4-7_v0_AtmosphericModel",
+          "ds:atmosMicrophysicsScheme": "Explicit moisture (SUBEX; Pal et al 2000)",
+          "ds:atmosPblScheme": "Holtslag (1990)",
+          "ds:toaLevels": "23 (50 hPa)",
+          "ds:atmosDynamicsCore": "Hydrostatic dynamical core",
+          "ds:atmosConvectionScheme": "Emanuel (1991) over land, Tiedtke (1996) over ocean",
+          "ds:atmosShortwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl et al., 1998)",
+          "ds:atmosLongwaveRadiationScheme": "CCM radiation scheme (NCAR CCM3, Kiehl et al., 1998)"
+        },
         "ds:hasDrivingGCM": [
           {
             "@id": "ipcc:MIROC5",
@@ -2418,23 +2902,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_WAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_bcmafw",
+      "@id": "#MPI-M_MPI-ESM-LR_REMO.ipedwl",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_WAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015",
+      "rdfs:label": "MPI-M_MPI-ESM-LR_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_MPI-ESM-LR_historical_r1i1p1_REMO2015_bcmafw",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-LR_REMO.ipedwl",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.vmkasn",
+          "@id": "#TemporalPeriod.qraxle",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zagbef"
+          "@id": "#Ensemble.bnvrgo"
         }
       },
       "ds:hasSimulationModel": {
@@ -2457,23 +2941,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_WAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_qedlji",
+      "@id": "#MPI-M_MPI-ESM-MR_RegCM.gzwdpo",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_WAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "MPI-M_MPI-ESM-MR_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_MPI-ESM-MR_historical_r1i1p1_RegCM4-7_qedlji",
+        "@id": "#DatasetSubset.MPI-M_MPI-ESM-MR_RegCM.gzwdpo",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.khmpxe",
+          "@id": "#TemporalPeriod.lkndvp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zagbef"
+          "@id": "#Ensemble.bnvrgo"
         }
       },
       "ds:hasModellingCenter": {
@@ -2496,23 +2980,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_REMO2015_egyvdl",
+      "@id": "#NCC_NorESM1-M_REMO.tsokaz",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_REMO2015",
+      "rdfs:label": "NCC_NorESM1-M_REMO",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_REMO2015_egyvdl",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_REMO.tsokaz",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hbziyv",
+          "@id": "#TemporalPeriod.pahmuw",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zagbef"
+          "@id": "#Ensemble.bnvrgo"
         }
       },
       "ds:hasSimulationModel": {
@@ -2535,23 +3019,23 @@
       }
     },
     {
-      "@id": "#CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_shfxcp",
+      "@id": "#NCC_NorESM1-M_RegCM.hpakji",
       "@type": "ds:MultiDecadalSimulation",
-      "rdfs:label": "CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_RegCM4-7",
+      "rdfs:label": "NCC_NorESM1-M_RegCM",
       "ds:modelRun": "r1i1p1",
       "ds:hasDatasetSubset": {
-        "@id": "#DatasetSubset.CORDEX-CORE_WAS-22_NorESM1-M_historical_r1i1p1_RegCM4-7_shfxcp",
+        "@id": "#DatasetSubset.NCC_NorESM1-M_RegCM.hpakji",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hoxzpy",
+          "@id": "#TemporalPeriod.dbpjgx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "[1970-2006)",
           "prov:startedAtTime": "1970-01-01T00:00:00Z",
           "prov:endedAtTime": "2005-12-31T23:59:59Z"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zagbef"
+          "@id": "#Ensemble.bnvrgo"
         }
       },
       "ds:hasModellingCenter": {
