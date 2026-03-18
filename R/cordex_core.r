@@ -25,18 +25,10 @@ output.dir <- "json_ld/CORDEX-CORE"
 ## ////////////////////////////////////////
 
 
+# RCM component metadata master file -------------------------------
 
-
-  # RCM component metadata master file -------------------------------
-
-  # dom_comps <- read.csv("master_files/cordex_model_components.csv") %>% names()
-  # subset(., Domain == dom)
-
-  # create unique rcm_id for lookup
-  # dom_comps$rcm_id <- paste(dom_comps$Institution,
-  #                           dom_comps$RCM,
-  #                           dom_comps$version,
-    #                           sep = "_")
+comps <- read.csv("master_files/cordex_model_components.csv") 
+  
 
 ## ///////////////////////////////////////////////////////////////////
 ## EXPERIMENT
@@ -61,11 +53,13 @@ for (i in 1:length(exps)) {
 
   ## Grand Ensemble list building - lapply over domains
   grand.ensemble.list <- lapply(1:length(domains), function(j) {
-    # j=7
+    # j=5
     dom <- domains[j]
     message("[",format(Sys.time(), "%H:%M:%S"),"] Processing ", dom, " domain")
     exp.subset <- subset(master.subset, subset = domain == dom) # Preserve exp.subset name from previous scripts
   
+    comps_dom <- subset(comps, Domain == dom)
+
     ## /////////////////////////////////////////////////////////////////////
     ## DATASET SUBSETS CREATION --------------------------------------------
     ## /////////////////////////////////////////////////////////////////////
@@ -73,7 +67,7 @@ for (i in 1:length(exps)) {
     ## Regional CORDEX-CORE Ensemble list - lapply over of dataset subset graphs
     ds.subset.list <- lapply(1:nrow(exp.subset), function(k) {
 
-      # k=1
+      # k=2
       gcm <- exp.subset$gcm[k]
       rcm <-  exp.subset$rcm[k]
       mem <- exp.subset$ensemble[k]
@@ -83,13 +77,27 @@ for (i in 1:length(exps)) {
       ind_rcm <- paste(exp.subset$rcm_institution[k], rcm, rcmv, sep = "_")
 
       # Use exact match to avoid duplicated rows that break attribute filtering
-      # metadata <- subset(eur11_comps, rcm_id == ind_rcm)
-      # if (nrow(metadata) == 0) {
-      #   stop(ind_rcm, " not found in RCM component metadata master file")
-      # }
-      # if (nrow(metadata) > 1) {
-      #   stop("Multiple entries found for ", ind_rcm, " in RCM component metadata master file")
-      # }
+      metadata <- subset(comps_dom, RCM == rcm)
+      if (nrow(metadata) == 0) {
+         stop(rcm, " not found in RCM component metadata master file")
+      }
+      
+      # Handle exception according to metadata specifications (https://zenodo.org/records/6553526):
+      # "REMO2015 v2 refers to a rerun of the corresponding REMO2015 v1 simulation, which was necessary due to inconsistent model level and surface data in CNRM-CM5 GCM boundary conditions"
+      # Hence, v1 is automatically assigned to REMO2015 simulations when driven by GCMs other than CNRM-CM5, 
+      ## while v2 is assigned to all REMO2015 simulations when driven by CNRM-CM5 (none in CORDEX-CORE so far, but just in case)
+
+      metadata <- if (rcm == "REMO2015" && gcm != "CNRM-CM5") {
+        metadata[which(metadata$version == "v1"),]
+      } else if (rcm == "REMO2015" && gcm == "CNRM-CM5") {
+        metadata[which(metadata$version == "v2"),]
+      } else {
+         metadata
+      }
+
+      if (nrow(metadata) > 1) {
+         stop("Multiple entries found for ", rcm, " in RCM component metadata master file")
+      }
       # metadata <- metadata[1, , drop = FALSE]
 
 
@@ -101,8 +109,9 @@ for (i in 1:length(exps)) {
       ## /////////////////////////////////////////////////////////////////
 
       ## Dataset
-      dlabel <- paste("CORDEX-CORE", dom, gcm, exp, mem, rcm, sep = "_")
-      ds <- paste0(dlabel, "_", randomName())
+      dlabel <- exp.subset$member_id_CICA[k]
+      #dlabel <- paste("CORDEX-CORE", dom, gcm, exp, mem, rcm, sep = "_")
+      ds <- paste0(dlabel, ".", randomName())
       message("[",format(Sys.time(), "%H:%M:%S"),"] Processing Dataset ", dlabel)
 
       # Dataset Individuals from CORDEX-CMIP5 vocabulary are currently ignored
@@ -167,7 +176,7 @@ for (i in 1:length(exps)) {
 
 
       attr.list <- list("ds:versionTag" = rcmv,
-                        ## Provisional annotation until harmonized metadata table is ready
+                         ## Extra annotation (already included in json as model component details) 
                         "ds:simulationNotes" = "https://zenodo.org/records/6553526"
       ) %>% filter_attr_list()
 
@@ -238,144 +247,144 @@ for (i in 1:length(exps)) {
                            label = "ds:wasDevelopedBy")
       }
 
-      #### ////////////////////////////////////////////////////////////////
-      #### RCM COMPONENTS
-      #### ////////////////////////////////////////////////////////////////
-      #
-      ### Atmospheric Model ------------------------------------------------
-      #
-      #label <- paste(ind_rcm, "AtmosphericModel", sep = "_")
-      #comp.nodename <- paste("Component", label, sep = ".")
-      #
-      ## Data properties:
-      #attr.list <- list("ds:toaLevels" = as.character(metadata$Atmos_nlevelsToA),
-      #                  "ds:gridDescription" = as.character(metadata$Atmos_Grid),
-      #                  "ds:atmosDynamicsCore" = as.character(metadata$Atmos_Dyn),
-      #                  "ds:atmosConvectionScheme" = as.character(metadata$Atmos_CU),
-      #                  "ds:atmosMicrophysicsScheme" = as.character(metadata$Atmos_MP),
-      #                  "ds:atmosPblScheme" = as.character(metadata$Atmos_PBL),
-      #                  "ds:atmosShortwaveRadiationScheme" = as.character(metadata$Atmos_SW),
-      #                  "ds:atmosLongwaveRadiationScheme" = as.character(metadata$Atmos_LW),
-      #                  "ds:atmosMisc"= as.character(metadata$Atmos_details)
-      #                  ) %>% filter_attr_list()
-      #
-      #graph <- my_add_vertices(graph,
-      #                         name = comp.nodename,
-      #                         label = label,
-      #                         className = "ds:AtmosModel",
-      #                         attr = attr.list)
-      #
-      #graph <- add_edges(graph,
-      #                   c(getNodeIndexbyName(graph, rcm.nodename),
-      #                     getNodeIndexbyName(graph, comp.nodename)),
-      #                         label = "ds:hasAtmosModelComponent")
-      #
-      ### Aerosol Model ------------------------------------------------
-      #label <- paste(ind_rcm, "AerosolModel", sep = "_")
-      #comp.nodename <- paste("Component", label, sep = ".")
-      #
-      ## Data properties:
-      #attr.list <- list("ds:aerosolParameterizationDescription" = as.character(metadata$Aerosols_mode),
-      #      "ds:aerosolRepresentationMode" = as.character(metadata$Aerosols_compName),
-      #      "ds:aerosolMisc" = as.character(metadata$Aerosols_details)
-      #      ) %>% filter_attr_list()
-      #
-      #graph <- my_add_vertices(graph,
-      #                         name = comp.nodename,
-      #                         label = label,
-      #                         className = "ds:AerosolModel",
-      #                         attr = attr.list)
-      #
-      #graph <- add_edges(graph,
-      #                   c(getNodeIndexbyName(graph, rcm.nodename),
-      #                     getNodeIndexbyName(graph, comp.nodename)),
-      #                         label = "ds:hasAerosolModelComponent")
-      #
-      #
-      ### Land Surface Model ------------------------------------------------
-      #label <- paste(ind_rcm, "LandSurfaceModel", sep = "_")
-      #comp.nodename <- paste("Component", label, sep = ".")
-      #
-      ## Data properties:
-      #attr.list <- list("ds:lsmLevels" = as.character(metadata$Land_nLevels),
-      #                  "ds:lsmMaxDepth" = as.character(metadata$Land_maxDepth),
-      #                  "ds:lsmComponentName" = as.character(metadata$Land_compName),
-      #                  "ds:lsmMisc" = as.character(metadata$Land_details)
-      #                  ) %>% filter_attr_list()
-      #
-      #graph <- my_add_vertices(graph,
-      #                         name = comp.nodename,
-      #                         label = label,
-      #                         className = "ds:LandSurfaceModel",
-      #                         attr = attr.list)
-      #
-      #graph <- add_edges(graph,
-      #                   c(getNodeIndexbyName(graph, rcm.nodename),
-      #                     getNodeIndexbyName(graph, comp.nodename)),
-      #                   label = "ds:hasLandSurfaceModelComponent")
-      #
-      ### Ocean Model ------------------------------------------------
-      #
-      #label <- paste(ind_rcm, "OceanModel", sep = "_")
-      #comp.nodename <- paste("Component", label, sep = ".")
-      #
-      ## Data properties:
-      #attr.list <- list("ds:oceanRepresentationMode" = as.character(metadata$Ocean_mode),
-      #                  "ds:oceanComponentReference" = as.character(metadata$Ocean_compRef),
-      #                  "ds:oceanMisc" = as.character(metadata$Ocean_details)
-      #                  ) %>% filter_attr_list()
-      #
-      #graph <- my_add_vertices(graph,
-      #                         name = comp.nodename,
-      #                         label = label,
-      #                         className = "ds:OceanModel",
-      #                         attr = attr.list)
-      #
-      #graph <- add_edges(graph,
-      #                   c(getNodeIndexbyName(graph, rcm.nodename),
-      #                     getNodeIndexbyName(graph, comp.nodename)),
-      #                          label = "ds:hasOceanModelComponent")
-      #
-      ### Lake Model ------------------------------------------------
-      #
-      #label <- paste(ind_rcm, "LakeModel", sep = "_")
-      #comp.nodename <- paste("Component", label, sep = ".")
-      ## Data properties:
-      #attr.list <- list("ds:lakeRepresentation" = as.character(metadata$Lake_model)) %>% filter_attr_list()
-      ## No lake model node is represented if metadata is missing
-      #if (length(attr.list) > 0) {
-      #  graph <- my_add_vertices(graph,
-      #                           name = comp.nodename,
-      #                           label = label,
-      #                           className = "ds:LakeModel",
-      #                           attr = attr.list)
-      #  graph <- add_edges(graph,
-      #                     c(getNodeIndexbyName(graph, rcm.nodename),
-      #                       getNodeIndexbyName(graph, comp.nodename)),
-      #                     label = "ds:hasLakeModelComponent")
-      #}
-      #
-      #
-      ### Urban model ------------------------------------------------
-      #
-      #label <- paste(ind_rcm, "UrbanModel", sep = "_")
-      #comp.nodename <- paste("Component", label, sep = ".")
-      ## Data properties:
-      #attr.list <- list("ds:urbanLsmRepresentation" = as.character(metadata$Urban_model)) %>% filter_attr_list()
-      ## No lake model node is represented if metadata is missing
-      #if (length(attr.list) > 0) {
-      #  graph <- my_add_vertices(graph,
-      #                           name = comp.nodename,
-      #                           label = label,
-      #                           className = "ds:UrbanLandSurfaceModel",
-      #                           attr = attr.list)
-      #
-      #  graph <- add_edges(graph,
-      #                     c(getNodeIndexbyName(graph, rcm.nodename),
-      #                       getNodeIndexbyName(graph, comp.nodename)),
-      #                     label = "ds:hasUrbanLandSurfaceModelComponent")
-      #}
-      #
+      ### ////////////////////////////////////////////////////////////////
+      ### RCM COMPONENTS
+      ### ////////////////////////////////////////////////////////////////
+      
+      ## Atmospheric Model ------------------------------------------------
+      
+      label <- paste(ind_rcm, "AtmosphericModel", sep = "_")
+      comp.nodename <- paste("Component", label, sep = ".")
+      
+      # Data properties:
+      attr.list <- list("ds:toaLevels" = as.character(metadata$Atmos_nlevelsToA),
+                        "ds:gridDescription" = as.character(metadata$Atmos_Grid),
+                        "ds:atmosDynamicsCore" = as.character(metadata$Atmos_Dyn),
+                        "ds:atmosConvectionScheme" = as.character(metadata$Atmos_CU),
+                        "ds:atmosMicrophysicsScheme" = as.character(metadata$Atmos_MP),
+                        "ds:atmosPblScheme" = as.character(metadata$Atmos_PBL),
+                        "ds:atmosShortwaveRadiationScheme" = as.character(metadata$Atmos_SW),
+                        "ds:atmosLongwaveRadiationScheme" = as.character(metadata$Atmos_LW),
+                        "ds:atmosMisc"= as.character(metadata$Atmos_details)
+                        ) %>% filter_attr_list()
+      
+      graph <- my_add_vertices(graph,
+                               name = comp.nodename,
+                               label = label,
+                               className = "ds:AtmosModel",
+                               attr = attr.list)
+      
+      graph <- add_edges(graph,
+                         c(getNodeIndexbyName(graph, rcm.nodename),
+                           getNodeIndexbyName(graph, comp.nodename)),
+                               label = "ds:hasAtmosModelComponent")
+      
+      ## Aerosol Model ------------------------------------------------
+      label <- paste(ind_rcm, "AerosolModel", sep = "_")
+      comp.nodename <- paste("Component", label, sep = ".")
+      
+      # Data properties:
+      attr.list <- list("ds:aerosolParameterizationDescription" = as.character(metadata$Aerosols_mode),
+            "ds:aerosolRepresentationMode" = as.character(metadata$Aerosols_compName),
+            "ds:aerosolMisc" = as.character(metadata$Aerosols_details)
+            ) %>% filter_attr_list()
+      
+      graph <- my_add_vertices(graph,
+                               name = comp.nodename,
+                               label = label,
+                               className = "ds:AerosolModel",
+                               attr = attr.list)
+      
+      graph <- add_edges(graph,
+                         c(getNodeIndexbyName(graph, rcm.nodename),
+                           getNodeIndexbyName(graph, comp.nodename)),
+                               label = "ds:hasAerosolModelComponent")
+      
+      
+      ## Land Surface Model ------------------------------------------------
+      label <- paste(ind_rcm, "LandSurfaceModel", sep = "_")
+      comp.nodename <- paste("Component", label, sep = ".")
+      
+      # Data properties:
+      attr.list <- list("ds:lsmLevels" = as.character(metadata$Land_nLevels),
+                        "ds:lsmMaxDepth" = as.character(metadata$Land_maxDepth),
+                        "ds:lsmComponentName" = as.character(metadata$Land_compName),
+                        "ds:lsmMisc" = as.character(metadata$Land_details)
+                        ) %>% filter_attr_list()
+      
+      graph <- my_add_vertices(graph,
+                               name = comp.nodename,
+                               label = label,
+                               className = "ds:LandSurfaceModel",
+                               attr = attr.list)
+      
+      graph <- add_edges(graph,
+                         c(getNodeIndexbyName(graph, rcm.nodename),
+                           getNodeIndexbyName(graph, comp.nodename)),
+                         label = "ds:hasLandSurfaceModelComponent")
+      
+      ## Ocean Model ------------------------------------------------
+      
+      label <- paste(ind_rcm, "OceanModel", sep = "_")
+      comp.nodename <- paste("Component", label, sep = ".")
+      
+      # Data properties:
+      attr.list <- list("ds:oceanRepresentationMode" = as.character(metadata$Ocean_mode),
+                        "ds:oceanComponentReference" = as.character(metadata$Ocean_compRef),
+                        "ds:oceanMisc" = as.character(metadata$Ocean_details)
+                        ) %>% filter_attr_list()
+      
+      graph <- my_add_vertices(graph,
+                               name = comp.nodename,
+                               label = label,
+                               className = "ds:OceanModel",
+                               attr = attr.list)
+      
+      graph <- add_edges(graph,
+                         c(getNodeIndexbyName(graph, rcm.nodename),
+                           getNodeIndexbyName(graph, comp.nodename)),
+                                label = "ds:hasOceanModelComponent")
+      
+      ## Lake Model ------------------------------------------------
+      
+      label <- paste(ind_rcm, "LakeModel", sep = "_")
+      comp.nodename <- paste("Component", label, sep = ".")
+      # Data properties:
+      attr.list <- list("ds:lakeRepresentation" = as.character(metadata$Lake_model)) %>% filter_attr_list()
+      # No lake model node is represented if metadata is missing
+      if (length(attr.list) > 0) {
+        graph <- my_add_vertices(graph,
+                                 name = comp.nodename,
+                                 label = label,
+                                 className = "ds:LakeModel",
+                                 attr = attr.list)
+        graph <- add_edges(graph,
+                           c(getNodeIndexbyName(graph, rcm.nodename),
+                             getNodeIndexbyName(graph, comp.nodename)),
+                           label = "ds:hasLakeModelComponent")
+      }
+      
+      
+      ## Urban model ------------------------------------------------
+      
+      label <- paste(ind_rcm, "UrbanModel", sep = "_")
+      comp.nodename <- paste("Component", label, sep = ".")
+      # Data properties:
+      attr.list <- list("ds:urbanLsmRepresentation" = as.character(metadata$Urban_model)) %>% filter_attr_list()
+      # No lake model node is represented if metadata is missing
+      if (length(attr.list) > 0) {
+        graph <- my_add_vertices(graph,
+                                 name = comp.nodename,
+                                 label = label,
+                                 className = "ds:UrbanLandSurfaceModel",
+                                 attr = attr.list)
+      
+        graph <- add_edges(graph,
+                           c(getNodeIndexbyName(graph, rcm.nodename),
+                             getNodeIndexbyName(graph, comp.nodename)),
+                           label = "ds:hasUrbanLandSurfaceModelComponent")
+      }
+      
       ## /////////////////////////////////////////////////////////////////
       ## DATASET SUBSET --------------------------------------------------
       ## /////////////////////////////////////////////////////////////////
